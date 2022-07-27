@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "docker-build": "docker-compose build db",
+    "docker-up": "docker-compose up -d",
+    "docker-down": "docker-compose down",
     "build": "npx tsc",
     "start": "node dist/index.js",
     "lint": "npx eslint --ignore-path .gitignore index.ts 'src/**'",
@@ -15,8 +18,13 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.1",
+    "pg": "^8.7.3",
     "ts-node": "^10.9.1",
-    "ts-node-dev": "^2.0.0"
+    "ts-node-dev": "^2.0.0",
+    "bcrypt": "^5.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "nookies": "^2.5.2",
+    "sequelize": "^6.21.3"
   },
   "eslintIgnore": [
     "",
@@ -30,6 +38,7 @@
     "concurrently": "^7.3.0",
     "eslint": "^8.20.0",
     "nodemon": "^2.0.19",
+    "sequelize-cli": "^6.4.1",
     "typescript": "^4.7.4"
   }
 }
