@@ -13,8 +13,11 @@ class LoginService {
         const { username, password } = userBody;
         const user = await Users(sequelize).findOne({ where: { username, password } })
         
-        if (user) { 
-            console.log("User valid!" +  user)
+        if (!user) { 
+            throw Error("Users not found!")
         }
+        return user
     }
-};
+}
+
+export default new LoginService()
