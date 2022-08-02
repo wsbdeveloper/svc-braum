@@ -1,16 +1,17 @@
-import * as Jest from "@jest/globals"
-import request from "supertest"
-import app from "../index"
+import * as Jest from "@jest/globals";
+import request from "supertest";
+import createServer from "../index";
 
-Jest.describe("Login routes", () => { 
-    Jest.it("should login success", async () => { 
-        let username = "wsbltx"
-        let password = "1234123"
+const app = createServer()
 
-        const res = await request(app)
-          .post("/login")
-            .send({ username, password });
-
-        Jest.expect(res.body.username).toEqual(username);
-    })
-})
+Jest.describe("Login routes", () => {
+  Jest.it("success create user", (done) => {
+    let payload = {
+      username: "wsbltx",
+      password: "1234123",
+    };
+      
+    request(app).post(`/login`).send(payload).expect(200);
+    done();
+  });
+});

@@ -1,5 +1,3 @@
-import express from "express"
-
 type Headers = {
     headers: any
 }

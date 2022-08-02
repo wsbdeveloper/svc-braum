@@ -1,17 +1,18 @@
-import jwt from "jsonwebtoken";
 import express from "express";
+import jwt from "jsonwebtoken";
+import process from "process";
 import { getTokenFromHeaders } from "./helpers/jwt";
 
-const ACCESSTOKEN_SECRET = process.env.ACCESSTOKEN_SECRET || undefined;
+const ACCESSTOKEN_SECRET = process.env?.ACCESSTOKEN_SECRET as string;
 const ACCESSTOKEN_EXPIRATION = "3s";
-const REFRESHTOKEN_SECRET = process.env.REFRESHTOKEN_SECRET;
+const REFRESHTOKEN_SECRET = process.env?.REFRESHTOKEN_SECRET as string;
 const REFRESHTOKEN_EXPIRATION = "10s";
 
 export const authService = {
   async generateAccessToken(userId: string) {
-    return jwt.sign({ roles: ["user"] }, ACCESSTOKEN_SECRET, {
+    return jwt.sign({ roles: ["user"] }, "ACCESSTOKEN_SECRET", {
       subject: userId,
-      expiresIn: ACCESSTOKEN_EXPIRATION,
+      expiresIn: "1d",
     });
   },
   async validateAccessToken(accessToken: string) {

@@ -1,7 +1,8 @@
-import Users from "./../infra/database/models/users"
-import { sequelize } from "./../infra/database/models/index"
+import { sequelize } from "./../infra/database/models/index";
+import Users from "./../infra/database/models/users";
 
-import bcrypt from "bcrypt"
+import bcrypt from "bcrypt";
+import console from "console";
 
 type User = {
   id?: string;
@@ -12,26 +13,37 @@ type User = {
   refresh_token: string;
 };
 
+type UserDeleteParams = {
+    id: string;
+}
+
 
 class UsersService {
   async create(user: User) {
-      try {
-        const salt = await bcrypt.genSalt(10);
+    try {
+      const salt = await bcrypt.genSalt(10);
 
-        //Hash generate
-        const hash = await bcrypt.hash(user.password, salt);
+      //Hash generate
+      const hash = await bcrypt.hash(user.password, salt);
 
-        const isUp = await Users(sequelize).findOne({
-          where: { email: user.email },
-        });
-          
-        user.password = hash
-          
-        if (isUp !== null) { 
-            throw Error("User is up in up4tech!")
-        }
-          
-        return (await Users(sequelize).create({ ...user }))
+      const verifyEmail = await Users(sequelize).findOne({
+        where: { email: user.email },
+      });
+
+      const userFind = verifyEmail?.toJSON();
+
+      if (userFind?.email || userFind?.username) {
+        throw Error("Email or Username already!");
+      }
+
+      if (userFind !== undefined) {
+        console.log("aquii");
+        throw Error("User is up in up4tech, Try other data for your user.");
+      }
+
+      user.password = hash;
+
+      return await Users(sequelize).create({ ...user });
     } catch (error) {
       throw new Error("Erro in create users!" + error);
     }
@@ -55,9 +67,9 @@ class UsersService {
     }
   }
 
-  async delete(user: User) {
+  async delete(user: UserDeleteParams) {
     try {
-        return await await Users(sequelize).destroy({ where: { id: user.id} });
+      return await Users(sequelize).destroy({ where: { id: user.id } });
     } catch (error) {
       throw new Error("Erro in find user!" + error);
     }

@@ -1,7 +1,9 @@
 
-import Users from "./../infra/database/models/users"
+import bcrypt from "bcrypt"
+import console from "console"
 import { sequelize } from "./../infra/database/models/index"
-
+import Users from "./../infra/database/models/users"
+import { authService } from "./jwt"
 
 type UserBody = {
     username: string,
@@ -11,12 +13,22 @@ type UserBody = {
 class LoginService { 
     async login(userBody: UserBody) {
         const { username, password } = userBody;
-        const user = await Users(sequelize).findOne({ where: { username, password } })
         
-        if (!user) { 
-            throw Error("Users not found!")
+        const userAuth = await Users(sequelize).findOne({ where: { username } })
+        const user = await userAuth?.toJSON()
+        const verify = await bcrypt.compare(password, user.password);
+        console.log(verify)
+        
+        if (verify) {
+            const token = await authService.generateAccessToken(
+                user.name
+            );
+            
+            return {
+                ...user,
+                token,
+            };
         }
-        return user
     }
 }
 
