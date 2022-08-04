@@ -4,13 +4,13 @@ import process from "process";
 import { getTokenFromHeaders } from "./helpers/jwt";
 
 const ACCESSTOKEN_SECRET = process.env?.ACCESSTOKEN_SECRET as string;
-const ACCESSTOKEN_EXPIRATION = "3s";
+const ACCESSTOKEN_EXPIRATION = "1d" as string;
 const REFRESHTOKEN_SECRET = process.env?.REFRESHTOKEN_SECRET as string;
-const REFRESHTOKEN_EXPIRATION = "10s";
+const REFRESHTOKEN_EXPIRATION = "1d";
 
 export const authService = {
   async generateAccessToken(userId: string) {
-    return jwt.sign({ roles: ["user"] }, "ACCESSTOKEN_SECRET", {
+    return jwt.sign({ roles: ["user"] }, ACCESSTOKEN_EXPIRATION, {
       subject: userId,
       expiresIn: "1d",
     });
