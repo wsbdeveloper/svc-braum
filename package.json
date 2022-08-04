@@ -11,17 +11,7 @@
     "start": "node dist/index.js",
     "lint": "npx eslint --ignore-path .gitignore index.ts 'src/**'",
     "dev": "npx ts-node-dev --respawn index.ts",
-    "test": "cross-env NODE_ENV=test jest --testTimeout=10000 --maxWorkers=2"
-  },
-  "jest": {
-    "testEnvironment": "node",
-    "coveragePathIgnorePatterns": [
-      "/node_modules/"
-    ],
-    "setupFiles": [
-      "<rootDir>/test/setup-tests.ts"
-    ],
-    "forceExit": true
+    "test": "jest --runInBand"
   },
   "keywords": [],
   "author": "",

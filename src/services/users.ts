@@ -61,7 +61,17 @@ class UsersService {
 
   async update(user: User) {
     try {
-      return await await Users(sequelize).findByPk(user.id);
+      return await Users(sequelize).update(
+        {
+          name: user.name,
+          email: user.email,
+          username: user.username
+        },
+        {
+          where: { id: user.id },
+        }
+      );
+
     } catch (error) {
       throw new Error("Erro in find user!" + error);
     }

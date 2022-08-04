@@ -1,8 +1,7 @@
 import { describe, expect, it } from "@jest/globals";
 
-describe('sample test', () => { 
-    it("should test === true", done => { 
+describe('healthcheck test', () => { 
+    it("should test === true", () => { 
         expect(true).toBe(true)
-        done()
     })
 })
