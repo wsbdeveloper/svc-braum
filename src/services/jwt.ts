@@ -3,41 +3,46 @@ import jwt from "jsonwebtoken";
 import process from "process";
 import { getTokenFromHeaders } from "./helpers/jwt";
 
-const ACCESSTOKEN_SECRET = process.env?.ACCESSTOKEN_SECRET as string;
-const ACCESSTOKEN_EXPIRATION = "1d" as string;
-const REFRESHTOKEN_SECRET = process.env?.REFRESHTOKEN_SECRET as string;
-const REFRESHTOKEN_EXPIRATION = "1d";
-
-export const authService = {
+class AuthService {
   async generateAccessToken(userId: string) {
-    return jwt.sign({ roles: ["user"] }, ACCESSTOKEN_EXPIRATION, {
+    return jwt.sign({ roles: ["user"] }, process.env?.ACCESSTOKEN_SECRET as string, {
       subject: userId,
       expiresIn: "1d",
     });
-  },
+  }
+
   async validateAccessToken(accessToken: string) {
-    return jwt.verify(accessToken, ACCESSTOKEN_SECRET);
-  },
+    return jwt.verify(accessToken, process.env?.ACCESSTOKEN_SECRET as string);
+  }
+
   async isAuthenticated(req: express.Request) {
     const token = getTokenFromHeaders(req);
 
     try {
-      await authService.validateAccessToken(token);
+      await this.validateAccessToken(token);
       return true;
     } catch (err) {
       return false;
     }
-  },
+  }
+
   async generateRefreshToken(userId: string) {
-    return jwt.sign({}, REFRESHTOKEN_SECRET, {
+    return jwt.sign({}, process.env?.REFRESHTOKEN_SECRET as string, {
       subject: userId,
-      expiresIn: REFRESHTOKEN_EXPIRATION,
+      expiresIn: "24h",
     });
-  },
+  }
   async validateRefreshToken(refreshToken: string) {
-    return jwt.verify(refreshToken, REFRESHTOKEN_SECRET);
-  },
+    return jwt.verify(refreshToken, process.env?.REFRESHTOKEN_SECRET as string);
+  }
+
   async decodeToken(token: string) {
     return jwt.decode(token);
-  },
-};
+  }
+
+  async refresh(refresh_token: string) {
+    return await this.validateRefreshToken(refresh_token);
+  }
+}
+
+export default new AuthService();

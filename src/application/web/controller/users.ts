@@ -7,7 +7,7 @@ class UserController {
   async create(req: Request, res: Response) {
     try {
       const userCreated = await UserService.create(req?.body);
-      res.json(omit(userCreated.toJSON(), "password"));
+      res.json(omit(userCreated.toJSON(), ["password", "refresh_token"] ));
     } catch (erro) {
       res.status(400).json({
         message:
@@ -31,7 +31,7 @@ class UserController {
       await UserService.delete({
         id,
       })
-    );
+    ); 
   }
 }
 

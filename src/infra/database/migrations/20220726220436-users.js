@@ -1,5 +1,6 @@
 "use strict";
 
+// eslint-disable-next-line no-undef
 module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.createTable("Users", {
@@ -36,7 +37,7 @@ module.exports = {
       },
     });
   },
-  async down(queryInterface, Sequelize) {
+  async down(queryInterface) {
     await queryInterface.dropTable("Users");
   },
 };

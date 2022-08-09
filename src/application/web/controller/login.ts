@@ -5,12 +5,12 @@ import LoginService from "../../../services/login";
 class LoginController {
     async login(req: Request, res: Response) {
         try {
-            const userCreated = await LoginService.login(req.body)
-            res.json(userCreated.toJSON())
+            const loginUser = await LoginService.login(req.body)
+            res.json(loginUser.toJSON());
         } catch (erro) {
             res.status(400).json({
                 message:
-                    "Data values is bad! Users already exist or username is up in up4tech, Try other username!",
+                    "Login not successfully!",
                 error: erro,
             });
         }

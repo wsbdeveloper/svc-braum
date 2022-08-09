@@ -37,7 +37,6 @@ class UsersService {
       }
 
       if (userFind !== undefined) {
-        console.log("aquii");
         throw Error("User is up in up4tech, Try other data for your user.");
       }
 

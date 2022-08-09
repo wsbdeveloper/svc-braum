@@ -1,8 +1,11 @@
 "use strict";
+// eslint-disable-next-line no-undef
 const { Model, DataTypes } = require("sequelize");
 
+// eslint-disable-next-line no-undef
 const crypt = require("crypto");
 
+// eslint-disable-next-line no-undef
 module.exports = (sequelize) => {
   class Users extends Model {
     /**
@@ -10,8 +13,16 @@ module.exports = (sequelize) => {
      * This method is not a part of Sequelize lifecycle.
      * The `models/index` file will call this method automatically.
      */
-    static associate(models) {
+    static associate() {
       // define association here
+    }
+
+    getRefreshToken() { 
+      return this.refresh_token
+    }
+
+    getUsername() { 
+      return this.username
     }
   }
   Users.init(
