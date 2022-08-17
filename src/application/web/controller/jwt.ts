@@ -27,8 +27,8 @@ class LoginController {
   async refresh(req: Request) {
     const { refresh_token } = req.body;
 
-    const log = await JwtService.generateRefreshToken("wsbltx")
-    console.log(log)
+    await JwtService.generateRefreshToken("wsbltx");
+    
     try {
       const { sub } = await JwtService.validateRefreshToken(refresh_token);
 
@@ -36,9 +36,6 @@ class LoginController {
         where: { username: sub, refresh_token },
       });
 
-      console.log(findUser)
-
-      
       if (!findUser) {
         throw new Error(
           "User not valid! verify yout credentials or contact administrator"
@@ -53,9 +50,41 @@ class LoginController {
       findUser.set({ refresh_token });
       findUser.save();
 
-      return tokens
+      return tokens;
     } catch (erro) {
       throw new Error(erro as string);
+    }
+  }
+
+  async session(token: string) {
+    if (!token) {
+      throw new Error("Token is not valid!");
+    }
+
+    try {
+      await JwtService.validateAccessToken(token);
+      const decodedToken = await JwtService.decodeToken(token);
+      const { roles } = decodedToken as any
+      const user = await users(sequelize).findOne({
+        where: { username: decodedToken?.sub },
+      }); 
+      
+      console.log(user)
+
+      if (!user) {
+        throw new Error("Error session, user not valid!");
+      }
+
+      return {
+        user: {
+          username: user.getUsername(),
+          email: user.getEmail(),
+        },
+        id: decodedToken?.sub,
+        roles
+      };
+    } catch (error) {
+      throw new Error(`ERRO: ${error}`);
     }
   }
 }

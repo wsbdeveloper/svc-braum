@@ -5,10 +5,14 @@ import { getTokenFromHeaders } from "./helpers/jwt";
 
 class AuthService {
   async generateAccessToken(userId: string) {
-    return jwt.sign({ roles: ["user"] }, process.env?.ACCESSTOKEN_SECRET as string, {
-      subject: userId,
-      expiresIn: "1d",
-    });
+    return jwt.sign(
+      { roles: ["user"] },
+      process.env?.ACCESSTOKEN_SECRET as string,
+      {
+        subject: userId,
+        expiresIn: "1d",
+      }
+    );
   }
 
   async validateAccessToken(accessToken: string) {

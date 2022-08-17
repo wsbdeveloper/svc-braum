@@ -17,12 +17,16 @@ module.exports = (sequelize) => {
       // define association here
     }
 
-    getRefreshToken() { 
+    getRefreshToken() {
       return this.refresh_token
     }
 
-    getUsername() { 
+    getUsername() {
       return this.username
+    }
+
+    getEmail() { 
+      return this.email
     }
   }
   Users.init(

@@ -1,6 +1,5 @@
 
 import bcrypt from "bcrypt"
-import console from "console"
 import { sequelize } from "./../infra/database/models/index"
 import Users from "./../infra/database/models/users"
 import authService from "./jwt"
