@@ -1,4 +1,3 @@
-import console from "console";
 import { Request } from "express";
 import { sequelize } from "../../../infra/database/models";
 import users from "../../../infra/database/models/users";
@@ -27,8 +26,6 @@ class LoginController {
   async refresh(req: Request) {
     const { refresh_token } = req.body;
 
-    await JwtService.generateRefreshToken("wsbltx");
-    
     try {
       const { sub } = await JwtService.validateRefreshToken(refresh_token);
 
@@ -67,9 +64,7 @@ class LoginController {
       const { roles } = decodedToken as any
       const user = await users(sequelize).findOne({
         where: { username: decodedToken?.sub },
-      }); 
-      
-      console.log(user)
+      });
 
       if (!user) {
         throw new Error("Error session, user not valid!");
