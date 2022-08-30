@@ -28,7 +28,7 @@ describe("Jwt routes", () => {
       expect(token.length).toBeGreaterThanOrEqual(30);
     });
 
-    it("should refresh token check", async () => {
+    it.only("should refresh token check", async () => {
       const token = await authService.generateRefreshToken("fake_userid");
       const { sub } = await authService.validateRefreshToken(token);
 
@@ -42,7 +42,7 @@ describe("Jwt routes", () => {
       expect(!undefined == true).toEqual(sub !== undefined);
     });
 
-    it("Try generate refresh token and verify", async () => {
+    it.only("Try generate refresh token and verify", async () => {
       const token = await authService.generateRefreshToken("fake_token");
       const { sub } = await authService.validateRefreshToken(token);
 

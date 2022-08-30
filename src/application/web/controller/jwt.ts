@@ -25,10 +25,9 @@ class LoginController {
 
   async refresh(req: Request) {
     const { refresh_token } = req.body;
-
     try {
       const { sub } = await JwtService.validateRefreshToken(refresh_token);
-
+      
       const findUser = await users(sequelize).findOne({
         where: { username: sub, refresh_token },
       });
@@ -53,15 +52,17 @@ class LoginController {
     }
   }
 
-  async session(token: string) {
+  async getSession(token: string) {
     if (!token) {
       throw new Error("Token is not valid!");
     }
 
     try {
       await JwtService.validateAccessToken(token);
+
       const decodedToken = await JwtService.decodeToken(token);
       const { roles } = decodedToken as any
+
       const user = await users(sequelize).findOne({
         where: { username: decodedToken?.sub },
       });

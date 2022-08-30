@@ -31,13 +31,13 @@ class AuthService {
   }
 
   async generateRefreshToken(userId: string) {
-    return jwt.sign({}, process.env?.REFRESHTOKEN_SECRET as string, {
+    return jwt.sign({}, "secret" as string, {
       subject: userId,
       expiresIn: "24h",
     });
   }
   async validateRefreshToken(refreshToken: string) {
-    return jwt.verify(refreshToken, process.env?.REFRESHTOKEN_SECRET as string);
+    return jwt.verify(refreshToken, "secret" as string);
   }
 
   async decodeToken(token: string) {

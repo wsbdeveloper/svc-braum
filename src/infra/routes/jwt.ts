@@ -22,7 +22,7 @@ router.post("/refresh", (req: Request, res: Response) => {
 router.get("/session", (req: Request, res: Response) => {
   const token = getTokenFromHeaders(req);
   
-  JwtController.session(token)
+  JwtController.getSession(token)
     .then((data) => {
       res.json({
         data,
@@ -32,7 +32,7 @@ router.get("/session", (req: Request, res: Response) => {
       res.status(400).json({
         error: 400,
         message: "Check your credentials and try again!",
-        exception: err
+        exception: err,
       });
     });
 });
