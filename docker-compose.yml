@@ -1,6 +1,20 @@
 version: "3.2"
 
 services:
+  svcbraum:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: svc-braum
+    env_file: .env
+    ports:
+      - 8002:8002
+    volumes:
+      - .:/usr/app
+      - ./node_modules:/usr/app/node_modules
+    depends_on:
+      - redis
+      - db
   redis:
     image: redis
     ports:
