@@ -24,7 +24,8 @@ class LoginService {
             const refresh_token = await authService.generateRefreshToken(
                 user.username
             )
-
+            
+            userAuth
             userAuth?.set("refresh_token", refresh_token)
             userAuth?.save()
 

@@ -7,7 +7,7 @@ class TokenController {
     try {
       return await JwtService.generateAccessToken(req.body.username);
     } catch (error) {
-      throw new Error("Erro generate access token");
+      throw "Erro generate access token";
     }
   }
 
@@ -15,7 +15,7 @@ class TokenController {
     try {
       return await JwtService.generateAccessToken(req.body.username);
     } catch (error) {
-      throw new Error("Erro generate refresh token");
+      throw "Erro generate refresh token";
     }
   }
 }

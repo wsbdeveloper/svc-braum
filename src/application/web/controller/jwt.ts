@@ -25,9 +25,13 @@ class LoginController {
 
   async refresh(req: Request) {
     const { refresh_token } = req.body;
+
     try {
       const { sub } = await JwtService.validateRefreshToken(refresh_token);
       
+      console.log(sub, "subscribe");
+
+
       const findUser = await users(sequelize).findOne({
         where: { username: sub, refresh_token },
       });
@@ -48,13 +52,13 @@ class LoginController {
 
       return tokens;
     } catch (erro) {
-      throw new Error(erro as string);
+      throw erro
     }
   }
 
   async getSession(token: string) {
     if (!token) {
-      throw new Error("Token is not valid!");
+      throw "Token is not valid!";
     }
 
     try {
@@ -68,7 +72,7 @@ class LoginController {
       });
 
       if (!user) {
-        throw new Error("Error session, user not valid!");
+        throw "Error session, user not valid!";
       }
 
       return {
@@ -80,7 +84,7 @@ class LoginController {
         roles
       };
     } catch (error) {
-      throw new Error(`ERRO: ${error}`);
+      throw `ERRO: ${error}`;
     }
   }
 }
