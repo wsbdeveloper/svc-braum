@@ -26,34 +26,27 @@ class LoginController {
   async refresh(req: Request) {
     const { refresh_token } = req.body;
 
-    try {
-      const { sub } = await JwtService.validateRefreshToken(refresh_token);
-      
-      console.log(sub, "subscribe");
+    const { sub } = await JwtService.validateRefreshToken(refresh_token);
 
+    const findUser = await users(sequelize).findOne({
+      where: { username: sub, refresh_token },
+    });
 
-      const findUser = await users(sequelize).findOne({
-        where: { username: sub, refresh_token },
-      });
-
-      if (!findUser) {
-        throw new Error(
-          "User not valid! verify yout credentials or contact administrator"
-        );
-      }
-
-      const tokens = {
-        access_token: await JwtService.generateAccessToken(sub as string),
-        refresh_token: await JwtService.generateRefreshToken(sub as string),
-      };
-
-      findUser.set({ refresh_token });
-      findUser.save();
-
-      return tokens;
-    } catch (erro) {
-      throw erro
+    if (!findUser) {
+      throw new Error(
+        "User not valid! verify yout credentials or contact administrator"
+      );
     }
+
+    const tokens = {
+      access_token: await JwtService.generateAccessToken(sub as string),
+      refresh_token: await JwtService.generateRefreshToken(sub as string),
+    };
+
+    findUser.set({ refresh_token });
+    findUser.save();
+
+    return tokens;
   }
 
   async getSession(token: string) {
@@ -65,7 +58,7 @@ class LoginController {
       await JwtService.validateAccessToken(token);
 
       const decodedToken = await JwtService.decodeToken(token);
-      const { roles } = decodedToken as any
+      const { roles } = decodedToken as any;
 
       const user = await users(sequelize).findOne({
         where: { username: decodedToken?.sub },
@@ -81,7 +74,7 @@ class LoginController {
           email: user.getEmail(),
         },
         id: decodedToken?.sub,
-        roles
+        roles,
       };
     } catch (error) {
       throw `ERRO: ${error}`;

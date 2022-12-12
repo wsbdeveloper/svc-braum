@@ -25,7 +25,6 @@ class LoginService {
                 user.username
             )
             
-            userAuth
             userAuth?.set("refresh_token", refresh_token)
             userAuth?.save()
 
