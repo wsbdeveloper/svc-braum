@@ -12,28 +12,27 @@ type UserBody = {
 class LoginService { 
     async login(userBody: UserBody) {
         const { username, password } = userBody;
-        
         const userAuth = await Users(sequelize).findOne({ where: { username } })
         const user = await userAuth?.toJSON()
         const verify = await bcrypt.compare(password, user.password);
         
-        if (verify) {
-            const token = await authService.generateAccessToken(
-                user.username
-            );
-            const refresh_token = await authService.generateRefreshToken(
-                user.username
-            )
-            
-            userAuth?.set("refresh_token", refresh_token)
-            userAuth?.save()
-
-            return {
-                ...user,
-                refresh_token,
-                token,
-            };
+        if (!verify) {
+            throw new Error("User credentials not valid!")
         }
+
+        const token = await authService.generateAccessToken(user.username);
+        const refresh_token = await authService.generateRefreshToken(
+          user.username
+        );
+
+        userAuth?.set("refresh_token", refresh_token);
+        userAuth?.save();
+
+        return {
+          ...user,
+          refresh_token,
+          token,
+        };
     }
 }
 
