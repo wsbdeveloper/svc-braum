@@ -1,17 +1,17 @@
 {
   "development": {
-    "username": "user",
-    "password": "pass",
+    "username": "postgres",
+    "password": "Dqm5@vnc",
     "database": "postgres",
-    "port": 5433,
+    "port": 5432,
     "host": "127.0.0.1",
     "dialect": "postgresql"
   },
   "test": {
-    "username": "user",
-    "password": "pass",
+    "username": "postgres",
+    "password": "Dqm5@vnc",
     "database": "postgres",
-    "port": 5433,
+    "port": 5432,
     "host": "127.0.0.1",
     "dialect": "postgresql"
   },
