@@ -27,6 +27,10 @@ module.exports = (sequelize) => {
 
     getEmail() { 
       return this.email
+    } 
+
+    getPhone() {
+      return this.phone
     }
   }
   Users.init(
@@ -42,6 +46,7 @@ module.exports = (sequelize) => {
       email: DataTypes.STRING,
       password: DataTypes.STRING,
       refresh_token: DataTypes.STRING,
+      phone: DataTypes.STRING
     },
     {
       sequelize,
