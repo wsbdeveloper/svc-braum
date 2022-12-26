@@ -43,9 +43,9 @@ router.get("/validate", (req: Request, res: Response) => {
   jwt
     .isAuthenticated(req)
     .then((data) => {
-      console.log(res.json({
+      res.json({
         data,
-      }));
+      });
     })
     .catch((err) => {
       res.status(400).json({
