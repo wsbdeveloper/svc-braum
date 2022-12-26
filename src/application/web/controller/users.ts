@@ -6,6 +6,7 @@ import UserService from "../../../services/users";
 class UserController {
   async create(req: Request, res: Response) {
     try {
+      console.log(req.body)
       const userCreated = await UserService.create(req?.body);
       res.json(omit(userCreated.toJSON(), ["password", "refresh_token"] ));
     } catch (erro) {

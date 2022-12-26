@@ -10,6 +10,7 @@ type User = {
   name: string;
   password: string;
   email: string;
+  phone: string,
   refresh_token: string;
 };
 
@@ -41,7 +42,7 @@ class UsersService {
       }
 
       user.password = hash;
-
+      
       return await Users(sequelize).create({ ...user });
     } catch (error) {
       throw new Error("Erro in create users!" + error);
@@ -64,7 +65,8 @@ class UsersService {
         {
           name: user.name,
           email: user.email,
-          username: user.username
+          username: user.username,
+          phone: user.phone
         },
         {
           where: { id: user.id },
