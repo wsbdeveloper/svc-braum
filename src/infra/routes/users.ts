@@ -8,7 +8,7 @@ router.post("/", (req: Request, res: Response) => {
   UserController.create(req, res);
 });
 
-router.patch("/:id", async (req: Request, res: Response) => {
+router.patch("/", async (req: Request, res: Response) => {
   UserController.update(req, res);
 });
 
