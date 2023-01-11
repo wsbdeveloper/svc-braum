@@ -32,6 +32,10 @@ module.exports = (sequelize) => {
     getPhone() {
       return this.phone
     }
+
+    getIsFirstAccess() {
+      return this.isFirstAccess
+    }
   }
   Users.init(
     {
@@ -46,7 +50,8 @@ module.exports = (sequelize) => {
       email: DataTypes.STRING,
       password: DataTypes.STRING,
       refresh_token: DataTypes.STRING,
-      phone: DataTypes.STRING
+      phone: DataTypes.STRING,
+      isFirstAccess: DataTypes.BOOLEAN
     },
     {
       sequelize,
