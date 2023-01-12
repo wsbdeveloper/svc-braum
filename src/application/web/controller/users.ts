@@ -6,7 +6,6 @@ import UserService from "../../../services/users";
 class UserController {
   async create(req: Request, res: Response) {
     try {
-      console.log(req.body)
       const userCreated = await UserService.create(req?.body);
       res.json(omit(userCreated.toJSON(), ["password", "refresh_token"] ));
     } catch (erro) {
@@ -20,7 +19,7 @@ class UserController {
 
   async update(req: Request, res: Response) {
     try {
-      res.json(await UserService.update(req?.body));
+      res.json(await UserService.update(req.params?.id, req?.body));
     } catch (error) {
       res.status(400).json({});
     }

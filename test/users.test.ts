@@ -44,6 +44,25 @@ describe("Users CRUD", () => {
       });
   });
 
+  it("should update fields user by id, username and email", (done) => {
+    
+    let id = UUID
+    let payload = {
+      id,
+      username: "wsbltx",
+      email: "fuuulano@hotgmail.com",
+      password: "1234123",
+    };
+
+    request(app)
+      .patch(`/users/${id}`)
+      .send(payload)
+      .expect(200)
+      .end(() => {
+        done();
+      });
+  });
+
   it("should find one user", (done) => {
     let payload = {
       id: UUID,

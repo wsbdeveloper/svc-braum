@@ -4,8 +4,7 @@ import process from "process";
 import healthcheck from "./routes/healthcheck";
 import jwt from "./routes/jwt";
 import login from "./routes/login";
-import token from "./routes/tokenManager";
-import tokenManager from "./routes/tokenManager";
+import { default as token, default as tokenManager } from "./routes/tokenManager";
 import users from "./routes/users";
 
 function routes(app: Express) {

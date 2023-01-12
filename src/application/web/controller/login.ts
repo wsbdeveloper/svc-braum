@@ -11,7 +11,7 @@ class LoginController {
             res.status(400).json({
                 message:
                     "Login not successfully!",
-                error: erro,
+                error: 'Contact the support the API.',
             });
         }
     }

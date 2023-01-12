@@ -2,7 +2,6 @@ import { sequelize } from "./../infra/database/models/index";
 import Users from "./../infra/database/models/users";
 
 import bcrypt from "bcrypt";
-import console from "console";
 
 type User = {
   id?: string;
@@ -59,7 +58,7 @@ class UsersService {
     }
   }
 
-  async update(user: User) {
+  async update(id: string, user: User) {
     try {
       return await Users(sequelize).update(
         {
@@ -69,7 +68,7 @@ class UsersService {
           phone: user.phone
         },
         {
-          where: { id: user.id },
+          where: { id },
         }
       );
 
