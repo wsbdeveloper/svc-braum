@@ -12,6 +12,7 @@ type User = {
   email: string;
   phone: string,
   refresh_token: string;
+  isFirstAccess: boolean;
 };
 
 type UserDeleteParams = {
@@ -42,6 +43,8 @@ class UsersService {
       }
 
       user.password = hash;
+      
+      user.isFirstAccess = true;
       
       return await Users(sequelize).create({ ...user });
     } catch (error) {
