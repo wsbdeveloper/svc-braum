@@ -60,12 +60,15 @@ class UsersService {
 
   async update(id: string, user: User) {
     try {
+      const salt = await bcrypt.genSalt(10);
+
       return await Users(sequelize).update(
         {
           name: user.name,
           email: user.email,
           username: user.username,
-          phone: user.phone
+          phone: user.phone,
+          password: await bcrypt.hash(user.password, salt)
         },
         {
           where: { id },

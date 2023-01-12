@@ -19,7 +19,13 @@ class UserController {
 
   async update(req: Request, res: Response) {
     try {
+<<<<<<< HEAD
       res.json(await UserService.update(req.params?.id, req?.body));
+=======
+      const id = req.params.id;
+      req.body.id = id
+      res.json(await UserService.update(req?.body));
+>>>>>>> 19f3595 (feat: reset de senha)
     } catch (error) {
       res.status(400).json({});
     }
