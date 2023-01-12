@@ -1,25 +1,20 @@
-'use strict';
+"use strict";
 
-/** @type {import('sequelize-cli').Migration} */
+// eslint-disable-next-line no-undef
 module.exports = {
-  async up (queryInterface, Sequelize) {
-    return Promise.all(
-      queryInterface.addColumn(
-        'Users', // table name
-        'isFirstAccess', // new field name
-        {
-          type: Sequelize.BOOLEAN,
-          allowNull: true,
-        },
-      ))
+  async up(queryInterface, Sequelize) {
+    return await queryInterface.addColumn(
+      "Users", // table name
+      "isFirstAccess", // new field name
+      {
+        type: Sequelize.BOOLEAN,
+        allowNull: true,
+        defaultValue: true,
+      }
+    );
   },
 
-  async down (queryInterface, Sequelize) {
-    /**
-     * Add reverting commands here.
-     *
-     * Example:
-     * await queryInterface.dropTable('users');
-     */
-  }
+  async down(queryInterface) {
+    await queryInterface.removeColmn("Users", "isFirstAccess");
+  },
 };
