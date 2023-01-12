@@ -9,7 +9,11 @@ router.post("/", (req: Request, res: Response) => {
 });
 
 router.patch("/:id", async (req: Request, res: Response) => {
-  UserController.update(req, res);
+  UserController.updateInfoUser(req, res);
+});
+
+router.patch("/access/:id", async (req: Request, res: Response) => {
+  UserController.updateInfoLogin(req, res);
 });
 
 router.delete("/:id", async (req: Request, res: Response) => {
