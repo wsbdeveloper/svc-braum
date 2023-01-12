@@ -1,14 +1,9 @@
 {
   "development": {
-<<<<<<< HEAD
-    "username": "user",
-    "password": "pass",
-=======
     "username": "postgres",
     "password": "dqm50vnc",
->>>>>>> fd38814b05876e8c134ff38cee2f9ce338808135
     "database": "postgres",
-    "port": 5433,
+    "port": 5432,
     "host": "127.0.0.1",
     "dialect": "postgresql"
   },
