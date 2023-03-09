@@ -21,8 +21,16 @@ module.exports = (sequelize) => {
       return this.refresh_token
     }
 
+    getId() {
+      return this.id
+    }
+
     getUsername() {
       return this.username
+    }
+
+    getName() {
+      return this.name
     }
 
     getEmail() { 

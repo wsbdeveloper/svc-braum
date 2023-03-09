@@ -70,8 +70,13 @@ class LoginController {
 
       return {
         user: {
+          id: user.getId(),
+          name: user.getName(),
           username: user.getUsername(),
           email: user.getEmail(),
+          phone: user.getPhone(),
+          isFirstAccess: user.getIsFirstAccess(),
+          refreshToken: user.getRefreshToken()
         },
         id: decodedToken?.sub,
         roles,
