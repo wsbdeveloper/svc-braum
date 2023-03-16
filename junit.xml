@@ -1,20 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="17" failures="0" errors="0" time="8.005">
-  <testsuite name="Should test session function" errors="0" failures="0" skipped="0" timestamp="2023-03-16T13:34:00" time="4.893" tests="4">
-    <testcase classname="Should test session function Should request for session is already up" name="Should test session function Should request for session is already up" time="0.02">
+<testsuites name="jest tests" tests="17" failures="0" errors="0" time="8.017">
+  <testsuite name="Should test session function" errors="0" failures="0" skipped="0" timestamp="2023-03-16T13:46:33" time="4.948" tests="4">
+    <testcase classname="Should test session function Should request for session is already up" name="Should test session function Should request for session is already up" time="0.026">
     </testcase>
-    <testcase classname="Should test session function Should exception for user not exists" name="Should test session function Should exception for user not exists" time="0.017">
+    <testcase classname="Should test session function Should exception for user not exists" name="Should test session function Should exception for user not exists" time="0.016">
     </testcase>
-    <testcase classname="Should test session function Should request for session with roles valid type user exception" name="Should test session function Should request for session with roles valid type user exception" time="0.015">
+    <testcase classname="Should test session function Should request for session with roles valid type user exception" name="Should test session function Should request for session with roles valid type user exception" time="0.017">
     </testcase>
-    <testcase classname="Should test session function Should request for session with roles valid type user" name="Should test session function Should request for session with roles valid type user" time="0.016">
+    <testcase classname="Should test session function Should request for session with roles valid type user" name="Should test session function Should request for session with roles valid type user" time="0.017">
     </testcase>
   </testsuite>
-  <testsuite name="Jwt routes" errors="0" failures="0" skipped="4" timestamp="2023-03-16T13:34:05" time="1.001" tests="6">
+  <testsuite name="Users CRUD" errors="0" failures="0" skipped="0" timestamp="2023-03-16T13:46:38" time="1.108" tests="5">
+    <testcase classname="Users CRUD should create users" name="Users CRUD should create users" time="0.465">
+    </testcase>
+    <testcase classname="Users CRUD should update fields user" name="Users CRUD should update fields user" time="0.014">
+    </testcase>
+    <testcase classname="Users CRUD should update fields user by id, username and email" name="Users CRUD should update fields user by id, username and email" time="0.047">
+    </testcase>
+    <testcase classname="Users CRUD should find one user" name="Users CRUD should find one user" time="0.006">
+    </testcase>
+    <testcase classname="Users CRUD should delete user" name="Users CRUD should delete user" time="0.022">
+    </testcase>
+  </testsuite>
+  <testsuite name="Login routes" errors="0" failures="0" skipped="0" timestamp="2023-03-16T13:46:39" time="0.799" tests="1">
+    <testcase classname="Login routes given the product does not exist success login" name="Login routes given the product does not exist success login" time="0.261">
+    </testcase>
+  </testsuite>
+  <testsuite name="Jwt routes" errors="0" failures="0" skipped="4" timestamp="2023-03-16T13:46:40" time="0.75" tests="6">
     <testcase classname="Jwt routes Should tests for refresh token should generate access token" name="Jwt routes Should tests for refresh token should generate access token" time="0">
       <skipped/>
     </testcase>
-    <testcase classname="Jwt routes Should tests for refresh token should refresh token check" name="Jwt routes Should tests for refresh token should refresh token check" time="0.006">
+    <testcase classname="Jwt routes Should tests for refresh token should refresh token check" name="Jwt routes Should tests for refresh token should refresh token check" time="0.004">
     </testcase>
     <testcase classname="Jwt routes Should tests for refresh token should generate access token and verify" name="Jwt routes Should tests for refresh token should generate access token and verify" time="0">
       <skipped/>
@@ -28,23 +44,7 @@
       <skipped/>
     </testcase>
   </testsuite>
-  <testsuite name="Login routes" errors="0" failures="0" skipped="0" timestamp="2023-03-16T13:34:06" time="0.746" tests="1">
-    <testcase classname="Login routes given the product does not exist success login" name="Login routes given the product does not exist success login" time="0.216">
-    </testcase>
-  </testsuite>
-  <testsuite name="Users CRUD" errors="0" failures="0" skipped="0" timestamp="2023-03-16T13:34:07" time="0.856" tests="5">
-    <testcase classname="Users CRUD should create users" name="Users CRUD should create users" time="0.226">
-    </testcase>
-    <testcase classname="Users CRUD should update fields user" name="Users CRUD should update fields user" time="0.006">
-    </testcase>
-    <testcase classname="Users CRUD should update fields user by id, username and email" name="Users CRUD should update fields user by id, username and email" time="0.018">
-    </testcase>
-    <testcase classname="Users CRUD should find one user" name="Users CRUD should find one user" time="0.006">
-    </testcase>
-    <testcase classname="Users CRUD should delete user" name="Users CRUD should delete user" time="0.016">
-    </testcase>
-  </testsuite>
-  <testsuite name="healthcheck test" errors="0" failures="0" skipped="0" timestamp="2023-03-16T13:34:08" time="0.198" tests="1">
+  <testsuite name="healthcheck test" errors="0" failures="0" skipped="0" timestamp="2023-03-16T13:46:40" time="0.151" tests="1">
     <testcase classname="healthcheck test should test === true" name="healthcheck test should test === true" time="0.001">
     </testcase>
   </testsuite>
