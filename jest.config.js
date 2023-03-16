@@ -8,5 +8,9 @@ module.exports = {
   clearMocks: true,
   resetMocks: true,
   restoreMocks: true,
+  modulePathIgnorePatterns: ["<rootDir>/dist/"],
+  collectCoverageFrom: [
+    "src/**/*.ts",
+  ],
   coverageReporters: ["html", "text", "text-summary", "cobertura"],
 };
