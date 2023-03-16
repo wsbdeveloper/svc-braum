@@ -2,11 +2,11 @@
 module.exports = {
   preset: "ts-jest",
   testEnvironment: "node",
-  testMatch: ["**/**/*.test.ts"],
-  setupFiles: ["<rootDir>/.jest/setEnvVars.js"] ,
+  setupFiles: ["<rootDir>/.jest/setEnvVars.js"],
   verbose: true,
   forceExit: true,
   clearMocks: true,
   resetMocks: true,
   restoreMocks: true,
+  coverageReporters: ["html", "text", "text-summary", "cobertura"],
 };

@@ -1,0 +1,2079 @@
+<?xml version="1.0" ?>
+<!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
+<coverage lines-valid="641" lines-covered="475" line-rate="0.741" branches-valid="431" branches-covered="291" branch-rate="0.6751" timestamp="1678972772189" complexity="0" version="0.1">
+  <sources>
+    <source>/Users/wellington/laboratory/backend/svc-braum</source>
+  </sources>
+  <packages>
+    <package name="svc-braum" line-rate="0.9259000000000001" branch-rate="0.6666">
+      <classes>
+        <class name="index.ts" filename="index.ts" line-rate="0.8181" branch-rate="0.6666">
+          <methods>
+            <method name="(anonymous_8)" hits="0" signature="()V">
+              <lines>
+                <line number="12" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_9)" hits="0" signature="()V">
+              <lines>
+                <line number="12" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="1" hits="4" branch="false"/>
+            <line number="2" hits="4" branch="false"/>
+            <line number="3" hits="4" branch="false"/>
+            <line number="4" hits="4" branch="false"/>
+            <line number="6" hits="4" branch="false"/>
+            <line number="7" hits="4" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="9" hits="4" branch="false"/>
+            <line number="11" hits="4" branch="true" condition-coverage="0% (0/1)"/>
+            <line number="12" hits="0" branch="false"/>
+            <line number="13" hits="0" branch="false"/>
+            <line number="17" hits="4" branch="false"/>
+          </lines>
+        </class>
+        <class name="setup.ts" filename="setup.ts" line-rate="1" branch-rate="1">
+          <methods>
+            <method name="createServer" hits="8" signature="()V">
+              <lines>
+                <line number="8" hits="8"/>
+              </lines>
+            </method>
+            <method name="(anonymous_2)" hits="13" signature="()V">
+              <lines>
+                <line number="12" hits="13"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="1" hits="4" branch="false"/>
+            <line number="2" hits="4" branch="false"/>
+            <line number="3" hits="4" branch="false"/>
+            <line number="4" hits="4" branch="false"/>
+            <line number="6" hits="4" branch="false"/>
+            <line number="9" hits="8" branch="false"/>
+            <line number="10" hits="8" branch="false"/>
+            <line number="12" hits="8" branch="false"/>
+            <line number="13" hits="13" branch="false"/>
+            <line number="14" hits="13" branch="false"/>
+            <line number="17" hits="8" branch="false"/>
+            <line number="18" hits="8" branch="false"/>
+            <line number="19" hits="8" branch="false"/>
+            <line number="21" hits="8" branch="false"/>
+            <line number="23" hits="8" branch="false"/>
+            <line number="27" hits="4" branch="false"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="svc-braum.dist" line-rate="0.7777" branch-rate="0.6896">
+      <classes>
+        <class name="index.js" filename="dist/index.js" line-rate="0.619" branch-rate="0.5909">
+          <methods>
+            <method name="(anonymous_0)" hits="0" signature="()V">
+              <lines>
+                <line number="2" hits="0"/>
+              </lines>
+            </method>
+            <method name="adopt" hits="0" signature="()V">
+              <lines>
+                <line number="3" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_2)" hits="0" signature="()V">
+              <lines>
+                <line number="3" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_3)" hits="0" signature="()V">
+              <lines>
+                <line number="4" hits="0"/>
+              </lines>
+            </method>
+            <method name="fulfilled" hits="0" signature="()V">
+              <lines>
+                <line number="5" hits="0"/>
+              </lines>
+            </method>
+            <method name="rejected" hits="0" signature="()V">
+              <lines>
+                <line number="6" hits="0"/>
+              </lines>
+            </method>
+            <method name="step" hits="0" signature="()V">
+              <lines>
+                <line number="7" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_7)" hits="16" signature="()V">
+              <lines>
+                <line number="11" hits="16"/>
+              </lines>
+            </method>
+            <method name="(anonymous_8)" hits="0" signature="()V">
+              <lines>
+                <line number="23" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_9)" hits="0" signature="()V">
+              <lines>
+                <line number="23" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="2" hits="4" branch="true" condition-coverage="100% (3/3)"/>
+            <line number="3" hits="0" branch="true" condition-coverage="0% (0/2)"/>
+            <line number="4" hits="0" branch="true" condition-coverage="0% (0/2)"/>
+            <line number="5" hits="0" branch="false"/>
+            <line number="6" hits="0" branch="false"/>
+            <line number="7" hits="0" branch="true" condition-coverage="0% (0/2)"/>
+            <line number="8" hits="0" branch="true" condition-coverage="0% (0/2)"/>
+            <line number="11" hits="4" branch="true" condition-coverage="100% (3/3)"/>
+            <line number="12" hits="16" branch="true" condition-coverage="100% (4/4)"/>
+            <line number="14" hits="4" branch="false"/>
+            <line number="15" hits="4" branch="false"/>
+            <line number="16" hits="4" branch="false"/>
+            <line number="17" hits="4" branch="false"/>
+            <line number="18" hits="4" branch="false"/>
+            <line number="19" hits="4" branch="false"/>
+            <line number="20" hits="4" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="21" hits="4" branch="false"/>
+            <line number="22" hits="4" branch="true" condition-coverage="50% (1/2)"/>
+            <line number="23" hits="0" branch="false"/>
+            <line number="24" hits="0" branch="false"/>
+            <line number="27" hits="4" branch="false"/>
+          </lines>
+        </class>
+        <class name="setup.js" filename="dist/setup.js" line-rate="1" branch-rate="1">
+          <methods>
+            <method name="(anonymous_0)" hits="16" signature="()V">
+              <lines>
+                <line number="2" hits="16"/>
+              </lines>
+            </method>
+            <method name="createServer" hits="8" signature="()V">
+              <lines>
+                <line number="10" hits="8"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="2" hits="4" branch="true" condition-coverage="100% (3/3)"/>
+            <line number="3" hits="16" branch="true" condition-coverage="100% (4/4)"/>
+            <line number="5" hits="4" branch="false"/>
+            <line number="6" hits="4" branch="false"/>
+            <line number="7" hits="4" branch="false"/>
+            <line number="8" hits="4" branch="false"/>
+            <line number="9" hits="4" branch="false"/>
+            <line number="11" hits="8" branch="false"/>
+            <line number="12" hits="8" branch="false"/>
+            <line number="13" hits="8" branch="false"/>
+            <line number="14" hits="8" branch="false"/>
+            <line number="15" hits="8" branch="false"/>
+            <line number="16" hits="8" branch="false"/>
+            <line number="17" hits="8" branch="false"/>
+            <line number="19" hits="4" branch="false"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="svc-braum.dist.src.application.web.controller" line-rate="0.632" branch-rate="0.73">
+      <classes>
+        <class name="jwt.js" filename="dist/src/application/web/controller/jwt.js" line-rate="0.5454" branch-rate="0.6842">
+          <methods>
+            <method name="(anonymous_0)" hits="4" signature="()V">
+              <lines>
+                <line number="2" hits="4"/>
+              </lines>
+            </method>
+            <method name="adopt" hits="12" signature="()V">
+              <lines>
+                <line number="3" hits="12"/>
+              </lines>
+            </method>
+            <method name="(anonymous_2)" hits="0" signature="()V">
+              <lines>
+                <line number="3" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_3)" hits="4" signature="()V">
+              <lines>
+                <line number="4" hits="4"/>
+              </lines>
+            </method>
+            <method name="fulfilled" hits="12" signature="()V">
+              <lines>
+                <line number="5" hits="12"/>
+              </lines>
+            </method>
+            <method name="rejected" hits="0" signature="()V">
+              <lines>
+                <line number="6" hits="0"/>
+              </lines>
+            </method>
+            <method name="step" hits="14" signature="()V">
+              <lines>
+                <line number="7" hits="14"/>
+              </lines>
+            </method>
+            <method name="(anonymous_7)" hits="8" signature="()V">
+              <lines>
+                <line number="11" hits="8"/>
+              </lines>
+            </method>
+            <method name="(anonymous_8)" hits="0" signature="()V">
+              <lines>
+                <line number="19" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_9)" hits="0" signature="()V">
+              <lines>
+                <line number="21" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_10)" hits="0" signature="()V">
+              <lines>
+                <line number="30" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_11)" hits="0" signature="()V">
+              <lines>
+                <line number="31" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_12)" hits="0" signature="()V">
+              <lines>
+                <line number="40" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_13)" hits="0" signature="()V">
+              <lines>
+                <line number="41" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_14)" hits="4" signature="()V">
+              <lines>
+                <line number="59" hits="4"/>
+              </lines>
+            </method>
+            <method name="(anonymous_15)" hits="4" signature="()V">
+              <lines>
+                <line number="60" hits="4"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="2" hits="4" branch="true" condition-coverage="100% (3/3)"/>
+            <line number="3" hits="12" branch="true" condition-coverage="50% (1/2)"/>
+            <line number="4" hits="4" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="5" hits="12" branch="false"/>
+            <line number="6" hits="0" branch="false"/>
+            <line number="7" hits="14" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="8" hits="4" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="11" hits="4" branch="true" condition-coverage="100% (3/3)"/>
+            <line number="12" hits="8" branch="true" condition-coverage="100% (4/4)"/>
+            <line number="14" hits="4" branch="false"/>
+            <line number="15" hits="4" branch="false"/>
+            <line number="16" hits="4" branch="false"/>
+            <line number="17" hits="4" branch="false"/>
+            <line number="21" hits="0" branch="false"/>
+            <line number="22" hits="0" branch="false"/>
+            <line number="23" hits="0" branch="true" condition-coverage="0% (0/6)"/>
+            <line number="26" hits="0" branch="false"/>
+            <line number="31" hits="0" branch="false"/>
+            <line number="32" hits="0" branch="false"/>
+            <line number="33" hits="0" branch="false"/>
+            <line number="36" hits="0" branch="false"/>
+            <line number="41" hits="0" branch="false"/>
+            <line number="42" hits="0" branch="false"/>
+            <line number="43" hits="0" branch="false"/>
+            <line number="44" hits="0" branch="false"/>
+            <line number="47" hits="0" branch="true" condition-coverage="0% (0/2)"/>
+            <line number="48" hits="0" branch="false"/>
+            <line number="50" hits="0" branch="false"/>
+            <line number="54" hits="0" branch="false"/>
+            <line number="55" hits="0" branch="false"/>
+            <line number="56" hits="0" branch="false"/>
+            <line number="60" hits="4" branch="false"/>
+            <line number="61" hits="4" branch="true" condition-coverage="50% (1/2)"/>
+            <line number="62" hits="0" branch="false"/>
+            <line number="64" hits="4" branch="false"/>
+            <line number="65" hits="4" branch="false"/>
+            <line number="66" hits="4" branch="false"/>
+            <line number="67" hits="4" branch="false"/>
+            <line number="68" hits="4" branch="false"/>
+            <line number="71" hits="4" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="72" hits="2" branch="false"/>
+            <line number="74" hits="2" branch="false"/>
+            <line number="84" hits="2" branch="false"/>
+            <line number="89" hits="4" branch="false"/>
+          </lines>
+        </class>
+        <class name="login.js" filename="dist/src/application/web/controller/login.js" line-rate="0.8823000000000001" branch-rate="0.8887999999999999">
+          <methods>
+            <method name="(anonymous_0)" hits="1" signature="()V">
+              <lines>
+                <line number="2" hits="1"/>
+              </lines>
+            </method>
+            <method name="adopt" hits="1" signature="()V">
+              <lines>
+                <line number="3" hits="1"/>
+              </lines>
+            </method>
+            <method name="(anonymous_2)" hits="0" signature="()V">
+              <lines>
+                <line number="3" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_3)" hits="1" signature="()V">
+              <lines>
+                <line number="4" hits="1"/>
+              </lines>
+            </method>
+            <method name="fulfilled" hits="0" signature="()V">
+              <lines>
+                <line number="5" hits="0"/>
+              </lines>
+            </method>
+            <method name="rejected" hits="1" signature="()V">
+              <lines>
+                <line number="6" hits="1"/>
+              </lines>
+            </method>
+            <method name="step" hits="2" signature="()V">
+              <lines>
+                <line number="7" hits="2"/>
+              </lines>
+            </method>
+            <method name="(anonymous_7)" hits="4" signature="()V">
+              <lines>
+                <line number="11" hits="4"/>
+              </lines>
+            </method>
+            <method name="(anonymous_8)" hits="1" signature="()V">
+              <lines>
+                <line number="17" hits="1"/>
+              </lines>
+            </method>
+            <method name="(anonymous_9)" hits="1" signature="()V">
+              <lines>
+                <line number="18" hits="1"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="2" hits="4" branch="true" condition-coverage="100% (3/3)"/>
+            <line number="3" hits="1" branch="true" condition-coverage="50% (1/2)"/>
+            <line number="4" hits="1" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="5" hits="0" branch="false"/>
+            <line number="6" hits="1" branch="false"/>
+            <line number="7" hits="2" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="8" hits="1" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="11" hits="4" branch="true" condition-coverage="100% (3/3)"/>
+            <line number="12" hits="4" branch="true" condition-coverage="75% (3/4)"/>
+            <line number="14" hits="4" branch="false"/>
+            <line number="15" hits="4" branch="false"/>
+            <line number="18" hits="1" branch="false"/>
+            <line number="19" hits="1" branch="false"/>
+            <line number="20" hits="1" branch="false"/>
+            <line number="21" hits="0" branch="false"/>
+            <line number="24" hits="1" branch="false"/>
+            <line number="32" hits="4" branch="false"/>
+          </lines>
+        </class>
+        <class name="token.js" filename="dist/src/application/web/controller/token.js" line-rate="0.3" branch-rate="0.5">
+          <methods>
+            <method name="(anonymous_0)" hits="0" signature="()V">
+              <lines>
+                <line number="2" hits="0"/>
+              </lines>
+            </method>
+            <method name="adopt" hits="0" signature="()V">
+              <lines>
+                <line number="3" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_2)" hits="0" signature="()V">
+              <lines>
+                <line number="3" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_3)" hits="0" signature="()V">
+              <lines>
+                <line number="4" hits="0"/>
+              </lines>
+            </method>
+            <method name="fulfilled" hits="0" signature="()V">
+              <lines>
+                <line number="5" hits="0"/>
+              </lines>
+            </method>
+            <method name="rejected" hits="0" signature="()V">
+              <lines>
+                <line number="6" hits="0"/>
+              </lines>
+            </method>
+            <method name="step" hits="0" signature="()V">
+              <lines>
+                <line number="7" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_7)" hits="4" signature="()V">
+              <lines>
+                <line number="11" hits="4"/>
+              </lines>
+            </method>
+            <method name="(anonymous_8)" hits="0" signature="()V">
+              <lines>
+                <line number="17" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_9)" hits="0" signature="()V">
+              <lines>
+                <line number="18" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_10)" hits="0" signature="()V">
+              <lines>
+                <line number="27" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_11)" hits="0" signature="()V">
+              <lines>
+                <line number="28" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="2" hits="4" branch="true" condition-coverage="100% (3/3)"/>
+            <line number="3" hits="0" branch="true" condition-coverage="0% (0/2)"/>
+            <line number="4" hits="0" branch="true" condition-coverage="0% (0/2)"/>
+            <line number="5" hits="0" branch="false"/>
+            <line number="6" hits="0" branch="false"/>
+            <line number="7" hits="0" branch="true" condition-coverage="0% (0/2)"/>
+            <line number="8" hits="0" branch="true" condition-coverage="0% (0/2)"/>
+            <line number="11" hits="4" branch="true" condition-coverage="100% (3/3)"/>
+            <line number="12" hits="4" branch="true" condition-coverage="75% (3/4)"/>
+            <line number="14" hits="4" branch="false"/>
+            <line number="15" hits="4" branch="false"/>
+            <line number="18" hits="0" branch="false"/>
+            <line number="19" hits="0" branch="false"/>
+            <line number="20" hits="0" branch="false"/>
+            <line number="23" hits="0" branch="false"/>
+            <line number="28" hits="0" branch="false"/>
+            <line number="29" hits="0" branch="false"/>
+            <line number="30" hits="0" branch="false"/>
+            <line number="33" hits="0" branch="false"/>
+            <line number="38" hits="4" branch="false"/>
+          </lines>
+        </class>
+        <class name="users.js" filename="dist/src/application/web/controller/users.js" line-rate="0.88" branch-rate="0.8461">
+          <methods>
+            <method name="(anonymous_0)" hits="7" signature="()V">
+              <lines>
+                <line number="2" hits="7"/>
+              </lines>
+            </method>
+            <method name="adopt" hits="7" signature="()V">
+              <lines>
+                <line number="3" hits="7"/>
+              </lines>
+            </method>
+            <method name="(anonymous_2)" hits="0" signature="()V">
+              <lines>
+                <line number="3" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_3)" hits="7" signature="()V">
+              <lines>
+                <line number="4" hits="7"/>
+              </lines>
+            </method>
+            <method name="fulfilled" hits="7" signature="()V">
+              <lines>
+                <line number="5" hits="7"/>
+              </lines>
+            </method>
+            <method name="rejected" hits="0" signature="()V">
+              <lines>
+                <line number="6" hits="0"/>
+              </lines>
+            </method>
+            <method name="step" hits="14" signature="()V">
+              <lines>
+                <line number="7" hits="14"/>
+              </lines>
+            </method>
+            <method name="(anonymous_7)" hits="4" signature="()V">
+              <lines>
+                <line number="11" hits="4"/>
+              </lines>
+            </method>
+            <method name="(anonymous_8)" hits="2" signature="()V">
+              <lines>
+                <line number="18" hits="2"/>
+              </lines>
+            </method>
+            <method name="(anonymous_9)" hits="2" signature="()V">
+              <lines>
+                <line number="19" hits="2"/>
+              </lines>
+            </method>
+            <method name="(anonymous_10)" hits="2" signature="()V">
+              <lines>
+                <line number="32" hits="2"/>
+              </lines>
+            </method>
+            <method name="(anonymous_11)" hits="2" signature="()V">
+              <lines>
+                <line number="33" hits="2"/>
+              </lines>
+            </method>
+            <method name="(anonymous_12)" hits="3" signature="()V">
+              <lines>
+                <line number="42" hits="3"/>
+              </lines>
+            </method>
+            <method name="(anonymous_13)" hits="3" signature="()V">
+              <lines>
+                <line number="43" hits="3"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="2" hits="4" branch="true" condition-coverage="100% (3/3)"/>
+            <line number="3" hits="7" branch="true" condition-coverage="50% (1/2)"/>
+            <line number="4" hits="7" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="5" hits="7" branch="false"/>
+            <line number="6" hits="0" branch="false"/>
+            <line number="7" hits="14" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="8" hits="7" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="11" hits="4" branch="true" condition-coverage="100% (3/3)"/>
+            <line number="12" hits="4" branch="true" condition-coverage="75% (3/4)"/>
+            <line number="14" hits="4" branch="false"/>
+            <line number="15" hits="4" branch="false"/>
+            <line number="16" hits="4" branch="false"/>
+            <line number="19" hits="2" branch="false"/>
+            <line number="20" hits="2" branch="false"/>
+            <line number="21" hits="2" branch="true" condition-coverage="75% (3/4)"/>
+            <line number="22" hits="2" branch="false"/>
+            <line number="25" hits="0" branch="false"/>
+            <line number="33" hits="2" branch="false"/>
+            <line number="34" hits="2" branch="false"/>
+            <line number="35" hits="2" branch="true" condition-coverage="75% (3/4)"/>
+            <line number="38" hits="0" branch="false"/>
+            <line number="43" hits="3" branch="false"/>
+            <line number="44" hits="3" branch="false"/>
+            <line number="45" hits="3" branch="false"/>
+            <line number="51" hits="4" branch="false"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="svc-braum.dist.src.helpers" line-rate="1" branch-rate="0.7777">
+      <classes>
+        <class name="getHeaderToken.js" filename="dist/src/helpers/getHeaderToken.js" line-rate="1" branch-rate="0.7272">
+          <methods>
+            <method name="getTokenFromHeaders" hits="4" signature="()V">
+              <lines>
+                <line number="4" hits="4"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="2" hits="4" branch="false"/>
+            <line number="3" hits="4" branch="false"/>
+            <line number="5" hits="4" branch="true" condition-coverage="66.66666666666666% (2/3)"/>
+            <line number="6" hits="4" branch="true" condition-coverage="75% (6/8)"/>
+            <line number="7" hits="4" branch="false"/>
+            <line number="9" hits="4" branch="false"/>
+          </lines>
+        </class>
+        <class name="logger.js" filename="dist/src/helpers/logger.js" line-rate="1" branch-rate="0.8571">
+          <methods>
+            <method name="(anonymous_0)" hits="8" signature="()V">
+              <lines>
+                <line number="2" hits="8"/>
+              </lines>
+            </method>
+            <method name="(anonymous_1)" hits="4" signature="()V">
+              <lines>
+                <line number="14" hits="4"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="2" hits="4" branch="true" condition-coverage="100% (3/3)"/>
+            <line number="3" hits="8" branch="true" condition-coverage="75% (3/4)"/>
+            <line number="5" hits="4" branch="false"/>
+            <line number="6" hits="4" branch="false"/>
+            <line number="7" hits="4" branch="false"/>
+            <line number="8" hits="4" branch="false"/>
+            <line number="12" hits="4" branch="false"/>
+            <line number="14" hits="4" branch="false"/>
+            <line number="16" hits="4" branch="false"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="svc-braum.dist.src.infra" line-rate="1" branch-rate="0.8461">
+      <classes>
+        <class name="routes.js" filename="dist/src/infra/routes.js" line-rate="1" branch-rate="0.8461">
+          <methods>
+            <method name="(anonymous_0)" hits="24" signature="()V">
+              <lines>
+                <line number="2" hits="24"/>
+              </lines>
+            </method>
+            <method name="routes" hits="8" signature="()V">
+              <lines>
+                <line number="12" hits="8"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="2" hits="4" branch="true" condition-coverage="100% (3/3)"/>
+            <line number="3" hits="24" branch="true" condition-coverage="100% (4/4)"/>
+            <line number="5" hits="4" branch="false"/>
+            <line number="6" hits="4" branch="false"/>
+            <line number="7" hits="4" branch="false"/>
+            <line number="8" hits="4" branch="false"/>
+            <line number="9" hits="4" branch="false"/>
+            <line number="10" hits="4" branch="false"/>
+            <line number="11" hits="4" branch="false"/>
+            <line number="14" hits="8" branch="false"/>
+            <line number="15" hits="8" branch="false"/>
+            <line number="16" hits="8" branch="false"/>
+            <line number="17" hits="8" branch="false"/>
+            <line number="18" hits="8" branch="true" condition-coverage="66.66666666666666% (4/6)"/>
+            <line number="19" hits="8" branch="false"/>
+            <line number="22" hits="4" branch="false"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="svc-braum.dist.src.infra.database.models" line-rate="0.9285" branch-rate="0.6666">
+      <classes>
+        <class name="index.js" filename="dist/src/infra/database/models/index.js" line-rate="0.95" branch-rate="0.6666">
+          <methods>
+            <method name="(anonymous_0)" hits="8" signature="()V">
+              <lines>
+                <line number="19" hits="8"/>
+              </lines>
+            </method>
+            <method name="(anonymous_1)" hits="4" signature="()V">
+              <lines>
+                <line number="22" hits="4"/>
+              </lines>
+            </method>
+            <method name="(anonymous_2)" hits="4" signature="()V">
+              <lines>
+                <line number="26" hits="4"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="3" hits="4" branch="false"/>
+            <line number="4" hits="4" branch="false"/>
+            <line number="5" hits="4" branch="false"/>
+            <line number="6" hits="4" branch="false"/>
+            <line number="7" hits="4" branch="true" condition-coverage="50% (1/2)"/>
+            <line number="8" hits="4" branch="false"/>
+            <line number="9" hits="4" branch="false"/>
+            <line number="11" hits="4" branch="true" condition-coverage="50% (1/2)"/>
+            <line number="12" hits="0" branch="false"/>
+            <line number="15" hits="4" branch="false"/>
+            <line number="17" hits="4" branch="false"/>
+            <line number="20" hits="8" branch="true" condition-coverage="100% (3/3)"/>
+            <line number="23" hits="4" branch="false"/>
+            <line number="24" hits="4" branch="false"/>
+            <line number="26" hits="4" branch="false"/>
+            <line number="27" hits="4" branch="true" condition-coverage="50% (1/2)"/>
+            <line number="28" hits="4" branch="false"/>
+            <line number="31" hits="4" branch="false"/>
+            <line number="32" hits="4" branch="false"/>
+            <line number="33" hits="4" branch="false"/>
+          </lines>
+        </class>
+        <class name="users.js" filename="dist/src/infra/database/models/users.js" line-rate="0.875" branch-rate="1">
+          <methods>
+            <method name="(anonymous_0)" hits="19" signature="()V">
+              <lines>
+                <line number="7" hits="19"/>
+              </lines>
+            </method>
+            <method name="(anonymous_1)" hits="4" signature="()V">
+              <lines>
+                <line number="14" hits="4"/>
+              </lines>
+            </method>
+            <method name="(anonymous_2)" hits="0" signature="()V">
+              <lines>
+                <line number="17" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_3)" hits="2" signature="()V">
+              <lines>
+                <line number="20" hits="2"/>
+              </lines>
+            </method>
+            <method name="(anonymous_4)" hits="2" signature="()V">
+              <lines>
+                <line number="23" hits="2"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="3" hits="4" branch="false"/>
+            <line number="5" hits="4" branch="false"/>
+            <line number="7" hits="4" branch="false"/>
+            <line number="18" hits="0" branch="false"/>
+            <line number="21" hits="2" branch="false"/>
+            <line number="24" hits="2" branch="false"/>
+            <line number="27" hits="19" branch="false"/>
+            <line number="43" hits="19" branch="false"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="svc-braum.dist.src.infra.routes" line-rate="0.8115000000000001" branch-rate="0.9129999999999999">
+      <classes>
+        <class name="healthcheck.js" filename="dist/src/infra/routes/healthcheck.js" line-rate="0.875" branch-rate="0.8571">
+          <methods>
+            <method name="(anonymous_0)" hits="4" signature="()V">
+              <lines>
+                <line number="2" hits="4"/>
+              </lines>
+            </method>
+            <method name="(anonymous_1)" hits="0" signature="()V">
+              <lines>
+                <line number="8" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="2" hits="4" branch="true" condition-coverage="100% (3/3)"/>
+            <line number="3" hits="4" branch="true" condition-coverage="75% (3/4)"/>
+            <line number="5" hits="4" branch="false"/>
+            <line number="6" hits="4" branch="false"/>
+            <line number="7" hits="4" branch="false"/>
+            <line number="8" hits="4" branch="false"/>
+            <line number="9" hits="0" branch="false"/>
+            <line number="13" hits="4" branch="false"/>
+          </lines>
+        </class>
+        <class name="jwt.js" filename="dist/src/infra/routes/jwt.js" line-rate="0.8234999999999999" branch-rate="1">
+          <methods>
+            <method name="(anonymous_0)" hits="8" signature="()V">
+              <lines>
+                <line number="2" hits="8"/>
+              </lines>
+            </method>
+            <method name="(anonymous_1)" hits="0" signature="()V">
+              <lines>
+                <line number="10" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_2)" hits="0" signature="()V">
+              <lines>
+                <line number="11" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_3)" hits="0" signature="()V">
+              <lines>
+                <line number="15" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_4)" hits="4" signature="()V">
+              <lines>
+                <line number="23" hits="4"/>
+              </lines>
+            </method>
+            <method name="(anonymous_5)" hits="2" signature="()V">
+              <lines>
+                <line number="26" hits="2"/>
+              </lines>
+            </method>
+            <method name="(anonymous_6)" hits="2" signature="()V">
+              <lines>
+                <line number="31" hits="2"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="2" hits="4" branch="true" condition-coverage="100% (3/3)"/>
+            <line number="3" hits="8" branch="true" condition-coverage="100% (4/4)"/>
+            <line number="5" hits="4" branch="false"/>
+            <line number="6" hits="4" branch="false"/>
+            <line number="7" hits="4" branch="false"/>
+            <line number="8" hits="4" branch="false"/>
+            <line number="9" hits="4" branch="false"/>
+            <line number="10" hits="4" branch="false"/>
+            <line number="11" hits="0" branch="false"/>
+            <line number="12" hits="0" branch="false"/>
+            <line number="16" hits="0" branch="false"/>
+            <line number="23" hits="4" branch="false"/>
+            <line number="24" hits="4" branch="false"/>
+            <line number="25" hits="4" branch="false"/>
+            <line number="27" hits="2" branch="false"/>
+            <line number="32" hits="2" branch="false"/>
+            <line number="39" hits="4" branch="false"/>
+          </lines>
+        </class>
+        <class name="login.js" filename="dist/src/infra/routes/login.js" line-rate="1" branch-rate="1">
+          <methods>
+            <method name="(anonymous_0)" hits="8" signature="()V">
+              <lines>
+                <line number="2" hits="8"/>
+              </lines>
+            </method>
+            <method name="(anonymous_1)" hits="1" signature="()V">
+              <lines>
+                <line number="9" hits="1"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="2" hits="4" branch="true" condition-coverage="100% (3/3)"/>
+            <line number="3" hits="8" branch="true" condition-coverage="100% (4/4)"/>
+            <line number="5" hits="4" branch="false"/>
+            <line number="6" hits="4" branch="false"/>
+            <line number="7" hits="4" branch="false"/>
+            <line number="8" hits="4" branch="false"/>
+            <line number="9" hits="4" branch="false"/>
+            <line number="10" hits="1" branch="false"/>
+            <line number="12" hits="4" branch="false"/>
+          </lines>
+        </class>
+        <class name="tokenManager.js" filename="dist/src/infra/routes/tokenManager.js" line-rate="0.6" branch-rate="1">
+          <methods>
+            <method name="(anonymous_0)" hits="8" signature="()V">
+              <lines>
+                <line number="2" hits="8"/>
+              </lines>
+            </method>
+            <method name="(anonymous_1)" hits="0" signature="()V">
+              <lines>
+                <line number="9" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_2)" hits="0" signature="()V">
+              <lines>
+                <line number="12" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_3)" hits="0" signature="()V">
+              <lines>
+                <line number="17" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_4)" hits="0" signature="()V">
+              <lines>
+                <line number="25" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_5)" hits="0" signature="()V">
+              <lines>
+                <line number="28" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_6)" hits="0" signature="()V">
+              <lines>
+                <line number="33" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="2" hits="4" branch="true" condition-coverage="100% (3/3)"/>
+            <line number="3" hits="8" branch="true" condition-coverage="100% (4/4)"/>
+            <line number="5" hits="4" branch="false"/>
+            <line number="6" hits="4" branch="false"/>
+            <line number="7" hits="4" branch="false"/>
+            <line number="8" hits="4" branch="false"/>
+            <line number="9" hits="4" branch="false"/>
+            <line number="10" hits="0" branch="false"/>
+            <line number="13" hits="0" branch="false"/>
+            <line number="18" hits="0" branch="false"/>
+            <line number="25" hits="4" branch="false"/>
+            <line number="26" hits="0" branch="false"/>
+            <line number="29" hits="0" branch="false"/>
+            <line number="34" hits="0" branch="false"/>
+            <line number="41" hits="4" branch="false"/>
+          </lines>
+        </class>
+        <class name="users.js" filename="dist/src/infra/routes/users.js" line-rate="0.85" branch-rate="0.8332999999999999">
+          <methods>
+            <method name="(anonymous_0)" hits="5" signature="()V">
+              <lines>
+                <line number="2" hits="5"/>
+              </lines>
+            </method>
+            <method name="adopt" hits="0" signature="()V">
+              <lines>
+                <line number="3" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_2)" hits="0" signature="()V">
+              <lines>
+                <line number="3" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_3)" hits="5" signature="()V">
+              <lines>
+                <line number="4" hits="5"/>
+              </lines>
+            </method>
+            <method name="fulfilled" hits="0" signature="()V">
+              <lines>
+                <line number="5" hits="0"/>
+              </lines>
+            </method>
+            <method name="rejected" hits="0" signature="()V">
+              <lines>
+                <line number="6" hits="0"/>
+              </lines>
+            </method>
+            <method name="step" hits="5" signature="()V">
+              <lines>
+                <line number="7" hits="5"/>
+              </lines>
+            </method>
+            <method name="(anonymous_7)" hits="8" signature="()V">
+              <lines>
+                <line number="11" hits="8"/>
+              </lines>
+            </method>
+            <method name="(anonymous_8)" hits="2" signature="()V">
+              <lines>
+                <line number="18" hits="2"/>
+              </lines>
+            </method>
+            <method name="(anonymous_9)" hits="2" signature="()V">
+              <lines>
+                <line number="21" hits="2"/>
+              </lines>
+            </method>
+            <method name="(anonymous_10)" hits="2" signature="()V">
+              <lines>
+                <line number="21" hits="2"/>
+              </lines>
+            </method>
+            <method name="(anonymous_11)" hits="3" signature="()V">
+              <lines>
+                <line number="24" hits="3"/>
+              </lines>
+            </method>
+            <method name="(anonymous_12)" hits="3" signature="()V">
+              <lines>
+                <line number="24" hits="3"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="2" hits="4" branch="true" condition-coverage="100% (3/3)"/>
+            <line number="3" hits="0" branch="true" condition-coverage="0% (0/2)"/>
+            <line number="4" hits="5" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="5" hits="0" branch="false"/>
+            <line number="6" hits="0" branch="false"/>
+            <line number="7" hits="5" branch="true" condition-coverage="50% (1/2)"/>
+            <line number="8" hits="5" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="11" hits="4" branch="true" condition-coverage="100% (3/3)"/>
+            <line number="12" hits="8" branch="true" condition-coverage="100% (4/4)"/>
+            <line number="14" hits="4" branch="false"/>
+            <line number="15" hits="4" branch="false"/>
+            <line number="16" hits="4" branch="false"/>
+            <line number="17" hits="4" branch="false"/>
+            <line number="18" hits="4" branch="false"/>
+            <line number="19" hits="2" branch="false"/>
+            <line number="21" hits="4" branch="false"/>
+            <line number="22" hits="2" branch="false"/>
+            <line number="24" hits="4" branch="false"/>
+            <line number="25" hits="3" branch="false"/>
+            <line number="27" hits="4" branch="false"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="svc-braum.dist.src.services" line-rate="0.7227" branch-rate="0.7340000000000001">
+      <classes>
+        <class name="jwt.js" filename="dist/src/services/jwt.js" line-rate="0.6562" branch-rate="0.7692">
+          <methods>
+            <method name="(anonymous_0)" hits="17" signature="()V">
+              <lines>
+                <line number="2" hits="17"/>
+              </lines>
+            </method>
+            <method name="adopt" hits="0" signature="()V">
+              <lines>
+                <line number="3" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_2)" hits="0" signature="()V">
+              <lines>
+                <line number="3" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_3)" hits="17" signature="()V">
+              <lines>
+                <line number="4" hits="17"/>
+              </lines>
+            </method>
+            <method name="fulfilled" hits="0" signature="()V">
+              <lines>
+                <line number="5" hits="0"/>
+              </lines>
+            </method>
+            <method name="rejected" hits="0" signature="()V">
+              <lines>
+                <line number="6" hits="0"/>
+              </lines>
+            </method>
+            <method name="step" hits="17" signature="()V">
+              <lines>
+                <line number="7" hits="17"/>
+              </lines>
+            </method>
+            <method name="(anonymous_7)" hits="8" signature="()V">
+              <lines>
+                <line number="11" hits="8"/>
+              </lines>
+            </method>
+            <method name="(anonymous_8)" hits="4" signature="()V">
+              <lines>
+                <line number="19" hits="4"/>
+              </lines>
+            </method>
+            <method name="(anonymous_9)" hits="4" signature="()V">
+              <lines>
+                <line number="21" hits="4"/>
+              </lines>
+            </method>
+            <method name="(anonymous_10)" hits="4" signature="()V">
+              <lines>
+                <line number="28" hits="4"/>
+              </lines>
+            </method>
+            <method name="(anonymous_11)" hits="4" signature="()V">
+              <lines>
+                <line number="30" hits="4"/>
+              </lines>
+            </method>
+            <method name="(anonymous_12)" hits="0" signature="()V">
+              <lines>
+                <line number="34" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_13)" hits="0" signature="()V">
+              <lines>
+                <line number="35" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_14)" hits="3" signature="()V">
+              <lines>
+                <line number="46" hits="3"/>
+              </lines>
+            </method>
+            <method name="(anonymous_15)" hits="3" signature="()V">
+              <lines>
+                <line number="47" hits="3"/>
+              </lines>
+            </method>
+            <method name="(anonymous_16)" hits="2" signature="()V">
+              <lines>
+                <line number="54" hits="2"/>
+              </lines>
+            </method>
+            <method name="(anonymous_17)" hits="2" signature="()V">
+              <lines>
+                <line number="55" hits="2"/>
+              </lines>
+            </method>
+            <method name="(anonymous_18)" hits="4" signature="()V">
+              <lines>
+                <line number="59" hits="4"/>
+              </lines>
+            </method>
+            <method name="(anonymous_19)" hits="4" signature="()V">
+              <lines>
+                <line number="60" hits="4"/>
+              </lines>
+            </method>
+            <method name="(anonymous_20)" hits="0" signature="()V">
+              <lines>
+                <line number="64" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_21)" hits="0" signature="()V">
+              <lines>
+                <line number="65" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="2" hits="4" branch="true" condition-coverage="100% (3/3)"/>
+            <line number="3" hits="0" branch="true" condition-coverage="0% (0/2)"/>
+            <line number="4" hits="17" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="5" hits="0" branch="false"/>
+            <line number="6" hits="0" branch="false"/>
+            <line number="7" hits="17" branch="true" condition-coverage="50% (1/2)"/>
+            <line number="8" hits="17" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="11" hits="4" branch="true" condition-coverage="100% (3/3)"/>
+            <line number="12" hits="8" branch="true" condition-coverage="75% (3/4)"/>
+            <line number="14" hits="4" branch="false"/>
+            <line number="15" hits="4" branch="false"/>
+            <line number="16" hits="4" branch="false"/>
+            <line number="17" hits="4" branch="false"/>
+            <line number="21" hits="4" branch="false"/>
+            <line number="22" hits="4" branch="true" condition-coverage="75% (3/4)"/>
+            <line number="30" hits="4" branch="false"/>
+            <line number="31" hits="4" branch="true" condition-coverage="75% (3/4)"/>
+            <line number="35" hits="0" branch="false"/>
+            <line number="36" hits="0" branch="false"/>
+            <line number="37" hits="0" branch="false"/>
+            <line number="38" hits="0" branch="false"/>
+            <line number="39" hits="0" branch="false"/>
+            <line number="42" hits="0" branch="false"/>
+            <line number="47" hits="3" branch="false"/>
+            <line number="48" hits="3" branch="false"/>
+            <line number="55" hits="2" branch="false"/>
+            <line number="56" hits="2" branch="false"/>
+            <line number="60" hits="4" branch="false"/>
+            <line number="61" hits="4" branch="false"/>
+            <line number="65" hits="0" branch="false"/>
+            <line number="66" hits="0" branch="false"/>
+            <line number="70" hits="4" branch="false"/>
+          </lines>
+        </class>
+        <class name="login.js" filename="dist/src/services/login.js" line-rate="0.7666" branch-rate="0.6562">
+          <methods>
+            <method name="(anonymous_0)" hits="1" signature="()V">
+              <lines>
+                <line number="2" hits="1"/>
+              </lines>
+            </method>
+            <method name="adopt" hits="3" signature="()V">
+              <lines>
+                <line number="3" hits="3"/>
+              </lines>
+            </method>
+            <method name="(anonymous_2)" hits="1" signature="()V">
+              <lines>
+                <line number="3" hits="1"/>
+              </lines>
+            </method>
+            <method name="(anonymous_3)" hits="1" signature="()V">
+              <lines>
+                <line number="4" hits="1"/>
+              </lines>
+            </method>
+            <method name="fulfilled" hits="3" signature="()V">
+              <lines>
+                <line number="5" hits="3"/>
+              </lines>
+            </method>
+            <method name="rejected" hits="0" signature="()V">
+              <lines>
+                <line number="6" hits="0"/>
+              </lines>
+            </method>
+            <method name="step" hits="3" signature="()V">
+              <lines>
+                <line number="7" hits="3"/>
+              </lines>
+            </method>
+            <method name="(anonymous_7)" hits="16" signature="()V">
+              <lines>
+                <line number="11" hits="16"/>
+              </lines>
+            </method>
+            <method name="(anonymous_8)" hits="1" signature="()V">
+              <lines>
+                <line number="21" hits="1"/>
+              </lines>
+            </method>
+            <method name="(anonymous_9)" hits="1" signature="()V">
+              <lines>
+                <line number="22" hits="1"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="2" hits="4" branch="true" condition-coverage="100% (3/3)"/>
+            <line number="3" hits="3" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="4" hits="1" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="5" hits="3" branch="false"/>
+            <line number="6" hits="0" branch="false"/>
+            <line number="7" hits="3" branch="true" condition-coverage="50% (1/2)"/>
+            <line number="8" hits="1" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="11" hits="4" branch="true" condition-coverage="100% (3/3)"/>
+            <line number="12" hits="16" branch="true" condition-coverage="100% (4/4)"/>
+            <line number="14" hits="4" branch="false"/>
+            <line number="15" hits="4" branch="false"/>
+            <line number="16" hits="4" branch="false"/>
+            <line number="17" hits="4" branch="false"/>
+            <line number="18" hits="4" branch="false"/>
+            <line number="19" hits="4" branch="false"/>
+            <line number="22" hits="1" branch="false"/>
+            <line number="23" hits="1" branch="false"/>
+            <line number="24" hits="1" branch="false"/>
+            <line number="25" hits="1" branch="true" condition-coverage="75% (3/4)"/>
+            <line number="26" hits="1" branch="false"/>
+            <line number="27" hits="1" branch="false"/>
+            <line number="28" hits="1" branch="true" condition-coverage="50% (1/2)"/>
+            <line number="29" hits="1" branch="false"/>
+            <line number="31" hits="0" branch="false"/>
+            <line number="32" hits="0" branch="false"/>
+            <line number="33" hits="0" branch="false"/>
+            <line number="34" hits="0" branch="true" condition-coverage="0% (0/4)"/>
+            <line number="35" hits="0" branch="true" condition-coverage="0% (0/4)"/>
+            <line number="36" hits="0" branch="false"/>
+            <line number="41" hits="4" branch="false"/>
+          </lines>
+        </class>
+        <class name="users.js" filename="dist/src/services/users.js" line-rate="0.7434999999999999" branch-rate="0.7777">
+          <methods>
+            <method name="(anonymous_0)" hits="7" signature="()V">
+              <lines>
+                <line number="2" hits="7"/>
+              </lines>
+            </method>
+            <method name="adopt" hits="13" signature="()V">
+              <lines>
+                <line number="3" hits="13"/>
+              </lines>
+            </method>
+            <method name="(anonymous_2)" hits="0" signature="()V">
+              <lines>
+                <line number="3" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_3)" hits="7" signature="()V">
+              <lines>
+                <line number="4" hits="7"/>
+              </lines>
+            </method>
+            <method name="fulfilled" hits="13" signature="()V">
+              <lines>
+                <line number="5" hits="13"/>
+              </lines>
+            </method>
+            <method name="rejected" hits="0" signature="()V">
+              <lines>
+                <line number="6" hits="0"/>
+              </lines>
+            </method>
+            <method name="step" hits="20" signature="()V">
+              <lines>
+                <line number="7" hits="20"/>
+              </lines>
+            </method>
+            <method name="(anonymous_7)" hits="8" signature="()V">
+              <lines>
+                <line number="11" hits="8"/>
+              </lines>
+            </method>
+            <method name="(anonymous_8)" hits="2" signature="()V">
+              <lines>
+                <line number="19" hits="2"/>
+              </lines>
+            </method>
+            <method name="(anonymous_9)" hits="2" signature="()V">
+              <lines>
+                <line number="20" hits="2"/>
+              </lines>
+            </method>
+            <method name="(anonymous_10)" hits="0" signature="()V">
+              <lines>
+                <line number="43" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_11)" hits="0" signature="()V">
+              <lines>
+                <line number="44" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_12)" hits="2" signature="()V">
+              <lines>
+                <line number="55" hits="2"/>
+              </lines>
+            </method>
+            <method name="(anonymous_13)" hits="2" signature="()V">
+              <lines>
+                <line number="56" hits="2"/>
+              </lines>
+            </method>
+            <method name="(anonymous_14)" hits="3" signature="()V">
+              <lines>
+                <line number="71" hits="3"/>
+              </lines>
+            </method>
+            <method name="(anonymous_15)" hits="3" signature="()V">
+              <lines>
+                <line number="72" hits="3"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="2" hits="4" branch="true" condition-coverage="100% (3/3)"/>
+            <line number="3" hits="13" branch="true" condition-coverage="50% (1/2)"/>
+            <line number="4" hits="7" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="5" hits="13" branch="false"/>
+            <line number="6" hits="0" branch="false"/>
+            <line number="7" hits="20" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="8" hits="7" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="11" hits="4" branch="true" condition-coverage="100% (3/3)"/>
+            <line number="12" hits="8" branch="true" condition-coverage="75% (3/4)"/>
+            <line number="14" hits="4" branch="false"/>
+            <line number="15" hits="4" branch="false"/>
+            <line number="16" hits="4" branch="false"/>
+            <line number="17" hits="4" branch="false"/>
+            <line number="20" hits="2" branch="false"/>
+            <line number="21" hits="2" branch="false"/>
+            <line number="22" hits="2" branch="false"/>
+            <line number="24" hits="2" branch="false"/>
+            <line number="25" hits="2" branch="false"/>
+            <line number="28" hits="2" branch="true" condition-coverage="50% (2/4)"/>
+            <line number="29" hits="2" branch="true" condition-coverage="75% (9/12)"/>
+            <line number="30" hits="0" branch="false"/>
+            <line number="32" hits="2" branch="true" condition-coverage="50% (1/2)"/>
+            <line number="33" hits="0" branch="false"/>
+            <line number="35" hits="2" branch="false"/>
+            <line number="36" hits="2" branch="false"/>
+            <line number="39" hits="0" branch="false"/>
+            <line number="44" hits="0" branch="false"/>
+            <line number="45" hits="0" branch="false"/>
+            <line number="46" hits="0" branch="false"/>
+            <line number="51" hits="0" branch="false"/>
+            <line number="56" hits="2" branch="false"/>
+            <line number="57" hits="2" branch="false"/>
+            <line number="58" hits="2" branch="false"/>
+            <line number="67" hits="0" branch="false"/>
+            <line number="72" hits="3" branch="false"/>
+            <line number="73" hits="3" branch="false"/>
+            <line number="74" hits="3" branch="false"/>
+            <line number="77" hits="0" branch="false"/>
+            <line number="82" hits="4" branch="false"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="svc-braum.dist.src.services.helpers" line-rate="0.5" branch-rate="0">
+      <classes>
+        <class name="jwt.js" filename="dist/src/services/helpers/jwt.js" line-rate="0.5" branch-rate="0">
+          <methods>
+            <method name="getTokenFromHeaders" hits="0" signature="()V">
+              <lines>
+                <line number="4" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="2" hits="4" branch="false"/>
+            <line number="3" hits="4" branch="false"/>
+            <line number="5" hits="0" branch="true" condition-coverage="0% (0/2)"/>
+            <line number="6" hits="0" branch="true" condition-coverage="0% (0/8)"/>
+            <line number="7" hits="0" branch="false"/>
+            <line number="9" hits="4" branch="false"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="svc-braum.src.application.web.controller" line-rate="0.5161" branch-rate="0.4324">
+      <classes>
+        <class name="jwt.ts" filename="src/application/web/controller/jwt.ts" line-rate="0.46659999999999996" branch-rate="0.4117">
+          <methods>
+            <method name="(anonymous_8)" hits="0" signature="()V">
+              <lines>
+                <line number="8" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_10)" hits="0" signature="()V">
+              <lines>
+                <line number="18" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_12)" hits="0" signature="()V">
+              <lines>
+                <line number="26" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_14)" hits="4" signature="()V">
+              <lines>
+                <line number="52" hits="4"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="2" hits="4" branch="false"/>
+            <line number="3" hits="4" branch="false"/>
+            <line number="5" hits="4" branch="false"/>
+            <line number="9" hits="0" branch="false"/>
+            <line number="10" hits="0" branch="false"/>
+            <line number="14" hits="0" branch="false"/>
+            <line number="19" hits="0" branch="false"/>
+            <line number="20" hits="0" branch="false"/>
+            <line number="22" hits="0" branch="false"/>
+            <line number="27" hits="0" branch="false"/>
+            <line number="29" hits="0" branch="false"/>
+            <line number="31" hits="0" branch="false"/>
+            <line number="35" hits="0" branch="true" condition-coverage="0% (0/1)"/>
+            <line number="36" hits="0" branch="false"/>
+            <line number="41" hits="0" branch="false"/>
+            <line number="46" hits="0" branch="false"/>
+            <line number="47" hits="0" branch="false"/>
+            <line number="49" hits="0" branch="false"/>
+            <line number="53" hits="4" branch="true" condition-coverage="0% (0/1)"/>
+            <line number="54" hits="0" branch="false"/>
+            <line number="57" hits="4" branch="false"/>
+            <line number="58" hits="4" branch="false"/>
+            <line number="60" hits="4" branch="false"/>
+            <line number="61" hits="4" branch="false"/>
+            <line number="63" hits="4" branch="false"/>
+            <line number="67" hits="4" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="68" hits="2" branch="false"/>
+            <line number="71" hits="2" branch="false"/>
+            <line number="85" hits="2" branch="false"/>
+            <line number="90" hits="4" branch="false"/>
+          </lines>
+        </class>
+        <class name="login.ts" filename="src/application/web/controller/login.ts" line-rate="0.8332999999999999" branch-rate="1">
+          <methods>
+            <method name="(anonymous_8)" hits="1" signature="()V">
+              <lines>
+                <line number="6" hits="1"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="3" hits="4" branch="false"/>
+            <line number="7" hits="1" branch="false"/>
+            <line number="8" hits="1" branch="false"/>
+            <line number="9" hits="0" branch="false"/>
+            <line number="11" hits="1" branch="false"/>
+            <line number="20" hits="4" branch="false"/>
+          </lines>
+        </class>
+        <class name="token.ts" filename="src/application/web/controller/token.ts" line-rate="0.25" branch-rate="1">
+          <methods>
+            <method name="(anonymous_8)" hits="0" signature="()V">
+              <lines>
+                <line number="6" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_10)" hits="0" signature="()V">
+              <lines>
+                <line number="14" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="3" hits="4" branch="false"/>
+            <line number="7" hits="0" branch="false"/>
+            <line number="8" hits="0" branch="false"/>
+            <line number="10" hits="0" branch="false"/>
+            <line number="15" hits="0" branch="false"/>
+            <line number="16" hits="0" branch="false"/>
+            <line number="18" hits="0" branch="false"/>
+            <line number="23" hits="4" branch="false"/>
+          </lines>
+        </class>
+        <class name="users.ts" filename="src/application/web/controller/users.ts" line-rate="0.6111" branch-rate="0.45">
+          <methods>
+            <method name="(anonymous_8)" hits="2" signature="()V">
+              <lines>
+                <line number="8" hits="2"/>
+              </lines>
+            </method>
+            <method name="(anonymous_10)" hits="1" signature="()V">
+              <lines>
+                <line number="21" hits="1"/>
+              </lines>
+            </method>
+            <method name="(anonymous_12)" hits="0" signature="()V">
+              <lines>
+                <line number="30" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_14)" hits="3" signature="()V">
+              <lines>
+                <line number="39" hits="3"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="1" hits="4" branch="false"/>
+            <line number="3" hits="4" branch="false"/>
+            <line number="5" hits="4" branch="false"/>
+            <line number="9" hits="2" branch="false"/>
+            <line number="10" hits="2" branch="true" condition-coverage="75% (3/4)"/>
+            <line number="11" hits="2" branch="false"/>
+            <line number="13" hits="0" branch="false"/>
+            <line number="22" hits="1" branch="false"/>
+            <line number="23" hits="1" branch="true" condition-coverage="75% (6/8)"/>
+            <line number="25" hits="0" branch="false"/>
+            <line number="26" hits="0" branch="false"/>
+            <line number="31" hits="0" branch="false"/>
+            <line number="32" hits="0" branch="true" condition-coverage="0% (0/8)"/>
+            <line number="34" hits="0" branch="false"/>
+            <line number="35" hits="0" branch="false"/>
+            <line number="40" hits="3" branch="false"/>
+            <line number="41" hits="3" branch="false"/>
+            <line number="49" hits="4" branch="false"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="svc-braum.src.helpers" line-rate="1" branch-rate="0.7272">
+      <classes>
+        <class name="getHeaderToken.ts" filename="src/helpers/getHeaderToken.ts" line-rate="1" branch-rate="0.7272">
+          <methods>
+            <method name="getTokenFromHeaders" hits="4" signature="()V">
+              <lines>
+                <line number="3" hits="4"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="3" hits="4" branch="false"/>
+            <line number="5" hits="4" branch="true" condition-coverage="66.66666666666666% (2/3)"/>
+            <line number="6" hits="4" branch="true" condition-coverage="75% (6/8)"/>
+            <line number="7" hits="4" branch="false"/>
+          </lines>
+        </class>
+        <class name="logger.ts" filename="src/helpers/logger.ts" line-rate="1" branch-rate="1">
+          <methods>
+            <method name="(anonymous_1)" hits="17" signature="()V">
+              <lines>
+                <line number="12" hits="17"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="1" hits="4" branch="false"/>
+            <line number="2" hits="4" branch="false"/>
+            <line number="5" hits="4" branch="false"/>
+            <line number="9" hits="4" branch="false"/>
+            <line number="12" hits="17" branch="false"/>
+            <line number="17" hits="4" branch="false"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="svc-braum.src.infra" line-rate="1" branch-rate="0.8">
+      <classes>
+        <class name="routes.ts" filename="src/infra/routes.ts" line-rate="1" branch-rate="0.8">
+          <methods>
+            <method name="routes" hits="8" signature="()V">
+              <lines>
+                <line number="10" hits="8"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="2" hits="4" branch="false"/>
+            <line number="4" hits="4" branch="false"/>
+            <line number="5" hits="4" branch="false"/>
+            <line number="6" hits="4" branch="false"/>
+            <line number="7" hits="4" branch="false"/>
+            <line number="8" hits="4" branch="false"/>
+            <line number="11" hits="8" branch="false"/>
+            <line number="12" hits="8" branch="false"/>
+            <line number="13" hits="8" branch="false"/>
+            <line number="14" hits="8" branch="false"/>
+            <line number="15" hits="8" branch="false"/>
+            <line number="17" hits="8" branch="true" condition-coverage="80% (4/5)"/>
+            <line number="18" hits="8" branch="false"/>
+            <line number="22" hits="4" branch="false"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="svc-braum.src.infra.database.models" line-rate="0.9687" branch-rate="0.6666">
+      <classes>
+        <class name="index.js" filename="src/infra/database/models/index.js" line-rate="0.95" branch-rate="0.6666">
+          <methods>
+            <method name="(anonymous_0)" hits="8" signature="()V">
+              <lines>
+                <line number="20" hits="8"/>
+              </lines>
+            </method>
+            <method name="(anonymous_1)" hits="4" signature="()V">
+              <lines>
+                <line number="23" hits="4"/>
+              </lines>
+            </method>
+            <method name="(anonymous_2)" hits="4" signature="()V">
+              <lines>
+                <line number="28" hits="4"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="3" hits="4" branch="false"/>
+            <line number="4" hits="4" branch="false"/>
+            <line number="5" hits="4" branch="false"/>
+            <line number="6" hits="4" branch="false"/>
+            <line number="7" hits="4" branch="true" condition-coverage="50% (1/2)"/>
+            <line number="8" hits="4" branch="false"/>
+            <line number="9" hits="4" branch="false"/>
+            <line number="12" hits="4" branch="true" condition-coverage="50% (1/2)"/>
+            <line number="13" hits="0" branch="false"/>
+            <line number="15" hits="4" branch="false"/>
+            <line number="18" hits="4" branch="false"/>
+            <line number="21" hits="8" branch="true" condition-coverage="100% (3/3)"/>
+            <line number="24" hits="4" branch="false"/>
+            <line number="25" hits="4" branch="false"/>
+            <line number="28" hits="4" branch="false"/>
+            <line number="29" hits="4" branch="true" condition-coverage="50% (1/2)"/>
+            <line number="30" hits="4" branch="false"/>
+            <line number="34" hits="4" branch="false"/>
+            <line number="35" hits="4" branch="false"/>
+            <line number="37" hits="4" branch="false"/>
+          </lines>
+        </class>
+        <class name="users.js" filename="src/infra/database/models/users.js" line-rate="1" branch-rate="1">
+          <methods>
+            <method name="(anonymous_0)" hits="18" signature="()V">
+              <lines>
+                <line number="9" hits="18"/>
+              </lines>
+            </method>
+            <method name="(anonymous_1)" hits="4" signature="()V">
+              <lines>
+                <line number="16" hits="4"/>
+              </lines>
+            </method>
+            <method name="(anonymous_2)" hits="2" signature="()V">
+              <lines>
+                <line number="20" hits="2"/>
+              </lines>
+            </method>
+            <method name="(anonymous_3)" hits="2" signature="()V">
+              <lines>
+                <line number="24" hits="2"/>
+              </lines>
+            </method>
+            <method name="(anonymous_4)" hits="2" signature="()V">
+              <lines>
+                <line number="28" hits="2"/>
+              </lines>
+            </method>
+            <method name="(anonymous_5)" hits="2" signature="()V">
+              <lines>
+                <line number="32" hits="2"/>
+              </lines>
+            </method>
+            <method name="(anonymous_6)" hits="2" signature="()V">
+              <lines>
+                <line number="36" hits="2"/>
+              </lines>
+            </method>
+            <method name="(anonymous_7)" hits="2" signature="()V">
+              <lines>
+                <line number="40" hits="2"/>
+              </lines>
+            </method>
+            <method name="(anonymous_8)" hits="2" signature="()V">
+              <lines>
+                <line number="44" hits="2"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="3" hits="4" branch="false"/>
+            <line number="6" hits="4" branch="false"/>
+            <line number="9" hits="4" branch="false"/>
+            <line number="21" hits="2" branch="false"/>
+            <line number="25" hits="2" branch="false"/>
+            <line number="29" hits="2" branch="false"/>
+            <line number="33" hits="2" branch="false"/>
+            <line number="37" hits="2" branch="false"/>
+            <line number="41" hits="2" branch="false"/>
+            <line number="45" hits="2" branch="false"/>
+            <line number="48" hits="18" branch="false"/>
+            <line number="69" hits="18" branch="false"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="svc-braum.src.infra.routes" line-rate="0.7406999999999999" branch-rate="1">
+      <classes>
+        <class name="healthcheck.ts" filename="src/infra/routes/healthcheck.ts" line-rate="0.8" branch-rate="1">
+          <methods>
+            <method name="(anonymous_1)" hits="0" signature="()V">
+              <lines>
+                <line number="5" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="1" hits="4" branch="false"/>
+            <line number="3" hits="4" branch="false"/>
+            <line number="5" hits="4" branch="false"/>
+            <line number="6" hits="0" branch="false"/>
+            <line number="12" hits="4" branch="false"/>
+          </lines>
+        </class>
+        <class name="jwt.ts" filename="src/infra/routes/jwt.ts" line-rate="0.7857" branch-rate="1">
+          <methods>
+            <method name="(anonymous_1)" hits="0" signature="()V">
+              <lines>
+                <line number="7" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_2)" hits="0" signature="()V">
+              <lines>
+                <line number="8" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_3)" hits="0" signature="()V">
+              <lines>
+                <line number="12" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_4)" hits="4" signature="()V">
+              <lines>
+                <line number="22" hits="4"/>
+              </lines>
+            </method>
+            <method name="(anonymous_5)" hits="2" signature="()V">
+              <lines>
+                <line number="26" hits="2"/>
+              </lines>
+            </method>
+            <method name="(anonymous_6)" hits="2" signature="()V">
+              <lines>
+                <line number="31" hits="2"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="1" hits="4" branch="false"/>
+            <line number="3" hits="4" branch="false"/>
+            <line number="4" hits="4" branch="false"/>
+            <line number="5" hits="4" branch="false"/>
+            <line number="7" hits="4" branch="false"/>
+            <line number="8" hits="0" branch="false"/>
+            <line number="9" hits="0" branch="false"/>
+            <line number="13" hits="0" branch="false"/>
+            <line number="22" hits="4" branch="false"/>
+            <line number="23" hits="4" branch="false"/>
+            <line number="25" hits="4" branch="false"/>
+            <line number="27" hits="2" branch="false"/>
+            <line number="32" hits="2" branch="false"/>
+            <line number="40" hits="4" branch="false"/>
+          </lines>
+        </class>
+        <class name="login.ts" filename="src/infra/routes/login.ts" line-rate="1" branch-rate="1">
+          <methods>
+            <method name="(anonymous_1)" hits="1" signature="()V">
+              <lines>
+                <line number="6" hits="1"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="1" hits="4" branch="false"/>
+            <line number="3" hits="4" branch="false"/>
+            <line number="4" hits="4" branch="false"/>
+            <line number="6" hits="4" branch="false"/>
+            <line number="7" hits="1" branch="false"/>
+            <line number="10" hits="4" branch="false"/>
+          </lines>
+        </class>
+        <class name="tokenManager.ts" filename="src/infra/routes/tokenManager.ts" line-rate="0.4705" branch-rate="1">
+          <methods>
+            <method name="(anonymous_1)" hits="0" signature="()V">
+              <lines>
+                <line number="7" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_2)" hits="0" signature="()V">
+              <lines>
+                <line number="10" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_3)" hits="0" signature="()V">
+              <lines>
+                <line number="15" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_4)" hits="0" signature="()V">
+              <lines>
+                <line number="25" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_5)" hits="0" signature="()V">
+              <lines>
+                <line number="28" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_6)" hits="0" signature="()V">
+              <lines>
+                <line number="33" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_7)" hits="0" signature="()V">
+              <lines>
+                <line number="42" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_8)" hits="0" signature="()V">
+              <lines>
+                <line number="45" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_9)" hits="0" signature="()V">
+              <lines>
+                <line number="50" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="1" hits="4" branch="false"/>
+            <line number="3" hits="4" branch="false"/>
+            <line number="4" hits="4" branch="false"/>
+            <line number="5" hits="4" branch="false"/>
+            <line number="7" hits="4" branch="false"/>
+            <line number="8" hits="0" branch="false"/>
+            <line number="11" hits="0" branch="false"/>
+            <line number="16" hits="0" branch="false"/>
+            <line number="25" hits="4" branch="false"/>
+            <line number="26" hits="0" branch="false"/>
+            <line number="29" hits="0" branch="false"/>
+            <line number="34" hits="0" branch="false"/>
+            <line number="42" hits="4" branch="false"/>
+            <line number="43" hits="0" branch="false"/>
+            <line number="46" hits="0" branch="false"/>
+            <line number="51" hits="0" branch="false"/>
+            <line number="59" hits="4" branch="false"/>
+          </lines>
+        </class>
+        <class name="users.ts" filename="src/infra/routes/users.ts" line-rate="0.9166" branch-rate="1">
+          <methods>
+            <method name="(anonymous_8)" hits="2" signature="()V">
+              <lines>
+                <line number="7" hits="2"/>
+              </lines>
+            </method>
+            <method name="(anonymous_9)" hits="1" signature="()V">
+              <lines>
+                <line number="11" hits="1"/>
+              </lines>
+            </method>
+            <method name="(anonymous_10)" hits="1" signature="()V">
+              <lines>
+                <line number="11" hits="1"/>
+              </lines>
+            </method>
+            <method name="(anonymous_11)" hits="0" signature="()V">
+              <lines>
+                <line number="15" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_12)" hits="0" signature="()V">
+              <lines>
+                <line number="15" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_13)" hits="3" signature="()V">
+              <lines>
+                <line number="19" hits="3"/>
+              </lines>
+            </method>
+            <method name="(anonymous_14)" hits="3" signature="()V">
+              <lines>
+                <line number="19" hits="3"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="1" hits="4" branch="false"/>
+            <line number="3" hits="4" branch="false"/>
+            <line number="5" hits="4" branch="false"/>
+            <line number="7" hits="4" branch="false"/>
+            <line number="8" hits="2" branch="false"/>
+            <line number="11" hits="4" branch="false"/>
+            <line number="12" hits="1" branch="false"/>
+            <line number="15" hits="4" branch="false"/>
+            <line number="16" hits="0" branch="false"/>
+            <line number="19" hits="4" branch="false"/>
+            <line number="20" hits="3" branch="false"/>
+            <line number="23" hits="4" branch="false"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="svc-braum.src.services" line-rate="0.6229" branch-rate="0.5405">
+      <classes>
+        <class name="jwt.ts" filename="src/services/jwt.ts" line-rate="0.6" branch-rate="0.75">
+          <methods>
+            <method name="(anonymous_8)" hits="4" signature="()V">
+              <lines>
+                <line number="7" hits="4"/>
+              </lines>
+            </method>
+            <method name="(anonymous_10)" hits="4" signature="()V">
+              <lines>
+                <line number="18" hits="4"/>
+              </lines>
+            </method>
+            <method name="(anonymous_12)" hits="0" signature="()V">
+              <lines>
+                <line number="22" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_14)" hits="3" signature="()V">
+              <lines>
+                <line number="33" hits="3"/>
+              </lines>
+            </method>
+            <method name="(anonymous_16)" hits="2" signature="()V">
+              <lines>
+                <line number="39" hits="2"/>
+              </lines>
+            </method>
+            <method name="(anonymous_18)" hits="4" signature="()V">
+              <lines>
+                <line number="43" hits="4"/>
+              </lines>
+            </method>
+            <method name="(anonymous_20)" hits="0" signature="()V">
+              <lines>
+                <line number="47" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="2" hits="4" branch="false"/>
+            <line number="3" hits="4" branch="false"/>
+            <line number="4" hits="4" branch="false"/>
+            <line number="8" hits="4" branch="false"/>
+            <line number="19" hits="4" branch="true" condition-coverage="75% (3/4)"/>
+            <line number="23" hits="0" branch="false"/>
+            <line number="25" hits="0" branch="false"/>
+            <line number="26" hits="0" branch="false"/>
+            <line number="27" hits="0" branch="false"/>
+            <line number="29" hits="0" branch="false"/>
+            <line number="34" hits="3" branch="false"/>
+            <line number="40" hits="2" branch="false"/>
+            <line number="44" hits="4" branch="false"/>
+            <line number="48" hits="0" branch="false"/>
+            <line number="52" hits="4" branch="false"/>
+          </lines>
+        </class>
+        <class name="login.ts" filename="src/services/login.ts" line-rate="0.6875" branch-rate="0.30760000000000004">
+          <methods>
+            <method name="(anonymous_8)" hits="1" signature="()V">
+              <lines>
+                <line number="13" hits="1"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="2" hits="4" branch="false"/>
+            <line number="3" hits="4" branch="false"/>
+            <line number="4" hits="4" branch="false"/>
+            <line number="5" hits="4" branch="false"/>
+            <line number="14" hits="1" branch="false"/>
+            <line number="15" hits="1" branch="false"/>
+            <line number="16" hits="1" branch="true" condition-coverage="75% (3/4)"/>
+            <line number="17" hits="1" branch="false"/>
+            <line number="19" hits="1" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="20" hits="1" branch="false"/>
+            <line number="23" hits="0" branch="false"/>
+            <line number="24" hits="0" branch="false"/>
+            <line number="28" hits="0" branch="true" condition-coverage="0% (0/4)"/>
+            <line number="29" hits="0" branch="true" condition-coverage="0% (0/4)"/>
+            <line number="31" hits="0" branch="false"/>
+            <line number="39" hits="4" branch="false"/>
+          </lines>
+        </class>
+        <class name="users.ts" filename="src/services/users.ts" line-rate="0.6" branch-rate="0.625">
+          <methods>
+            <method name="(anonymous_8)" hits="2" signature="()V">
+              <lines>
+                <line number="23" hits="2"/>
+              </lines>
+            </method>
+            <method name="(anonymous_10)" hits="0" signature="()V">
+              <lines>
+                <line number="54" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_12)" hits="1" signature="()V">
+              <lines>
+                <line number="64" hits="1"/>
+              </lines>
+            </method>
+            <method name="(anonymous_14)" hits="0" signature="()V">
+              <lines>
+                <line number="83" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_16)" hits="3" signature="()V">
+              <lines>
+                <line number="106" hits="3"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="1" hits="4" branch="false"/>
+            <line number="2" hits="4" branch="false"/>
+            <line number="4" hits="4" branch="false"/>
+            <line number="24" hits="2" branch="false"/>
+            <line number="25" hits="2" branch="false"/>
+            <line number="28" hits="2" branch="false"/>
+            <line number="30" hits="2" branch="false"/>
+            <line number="34" hits="2" branch="true" condition-coverage="50% (2/4)"/>
+            <line number="36" hits="2" branch="true" condition-coverage="72.72727272727273% (8/11)"/>
+            <line number="37" hits="0" branch="false"/>
+            <line number="40" hits="2" branch="true" condition-coverage="0% (0/1)"/>
+            <line number="41" hits="0" branch="false"/>
+            <line number="44" hits="2" branch="false"/>
+            <line number="46" hits="2" branch="false"/>
+            <line number="48" hits="2" branch="false"/>
+            <line number="50" hits="0" branch="false"/>
+            <line number="55" hits="0" branch="false"/>
+            <line number="56" hits="0" branch="false"/>
+            <line number="60" hits="0" branch="false"/>
+            <line number="65" hits="1" branch="false"/>
+            <line number="66" hits="1" branch="false"/>
+            <line number="79" hits="0" branch="false"/>
+            <line number="84" hits="0" branch="false"/>
+            <line number="85" hits="0" branch="false"/>
+            <line number="87" hits="0" branch="false"/>
+            <line number="102" hits="0" branch="false"/>
+            <line number="107" hits="3" branch="false"/>
+            <line number="108" hits="3" branch="false"/>
+            <line number="110" hits="0" branch="false"/>
+            <line number="115" hits="4" branch="false"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="svc-braum.src.services.helpers" line-rate="0.25" branch-rate="0">
+      <classes>
+        <class name="jwt.ts" filename="src/services/helpers/jwt.ts" line-rate="0.25" branch-rate="0">
+          <methods>
+            <method name="getTokenFromHeaders" hits="0" signature="()V">
+              <lines>
+                <line number="5" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="5" hits="4" branch="false"/>
+            <line number="7" hits="0" branch="true" condition-coverage="0% (0/2)"/>
+            <line number="8" hits="0" branch="true" condition-coverage="0% (0/8)"/>
+            <line number="9" hits="0" branch="false"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+  </packages>
+</coverage>
