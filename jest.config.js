@@ -9,8 +9,14 @@ module.exports = {
   resetMocks: true,
   restoreMocks: true,
   modulePathIgnorePatterns: ["<rootDir>/dist/"],
-  collectCoverageFrom: [
-    "src/**/*.ts",
-  ],
+  collectCoverageFrom: ["src/**/*.ts"],
   coverageReporters: ["html", "text", "text-summary", "cobertura"],
+  coverageThreshold: {
+    global: {
+      branches: 100,
+      functions: 100,
+      lines: 98,
+      statements: -10,
+    },
+  },
 };

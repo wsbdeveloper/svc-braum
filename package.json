@@ -12,7 +12,7 @@
     "lint": "npx eslint --ignore-path .gitignore index.ts 'src/**'",
     "dev": "npx ts-node-dev --respawn index.ts",
     "test": "jest --runInBand --coverageReporters='json-summary' --config ./jest.config.js --coverageDirectory=\"./coverage\" --ci --reporters=default --reporters=jest-junit --watchAll=false",
-    "coverage": "npm test -- --coverage"
+    "coverage": "npx jest --collect-coverage"
   },
   "keywords": [],
   "author": "",
